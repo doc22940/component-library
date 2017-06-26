@@ -16,7 +16,7 @@ Also make sure that you have gulp installed globally by installing it with the c
 npm install gulp-cli -g
 ```
 
-When done, you will have installed all required dependencies. 
+When done, you will have installed all required dependencies.
 
 To run the styleguide in watch mode execute the following command:
 

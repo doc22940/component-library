@@ -11,10 +11,10 @@ const exec = require('child_process').exec;
 const buildFolder = 'dist';
 const componentsFolder = 'components';
 
-gulp.task('connect', function() {
+gulp.task('connect', function () {
     connect.server({
-      root: buildFolder,
-      livereload: true
+        root: buildFolder,
+        livereload: true
     });
 });
 
@@ -24,7 +24,7 @@ gulp.task('connect:reload', function () {
         `${ buildFolder }/**/*.css`
     ]).pipe(connect.reload());
 });
- 
+
 gulp.task('styleguide', (cb) => {
     exec('nucleus', function (err, stdout, stderr) {
         console.log(stdout);
@@ -32,7 +32,7 @@ gulp.task('styleguide', (cb) => {
         cb(err);
     });
 });
- 
+
 gulp.task('sass', () => {
     return gulp.src([`${ componentsFolder }/styleguide.scss`])
         .pipe(plumber())
