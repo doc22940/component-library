@@ -1,0 +1,24 @@
+/**
+ * Atoms are the very basic elements of the stylesheet.
+ * Imagine every single-class element or selector rules as an atom.
+ * Examples could be buttons, links, headlines, inputs ... you get it, right?
+ *
+ * Replace parts inside [brackets] to create your own atom
+ */
+
+/**
+ * @atom [name-of-atom]
+ * @section [Section > Sub-section > Sub-sub-section]
+ * @description
+ *  [description-of-atom]
+ * @modifiers
+ *  [.class--modifier] [description-of-modifier]
+ * @markup
+ *  [example-markup]
+ */
+.atom-styles-here {
+  /* styles */
+  &--modifier {
+    /* styles */
+  }
+}

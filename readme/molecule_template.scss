@@ -1,0 +1,28 @@
+/**
+ * Molecules consist of one or more nested rules,
+ * but each of them must not be more than an atom itself.
+ * For example, using icons or buttons in molecules is valid,
+ * but using other molecules is not.
+ *
+ * Replace parts inside [brackets] to create your own molecule
+ */
+
+/**
+ * @molecule [name-of-molecule]
+ * @section [Section > Sub-section > Sub-sub-section]
+ * @description
+ *  [description-of-molecule]
+ * @modifiers
+ *  [.class--modifier] [description-of-modifier]
+ * @markup
+ *  [example-markup]
+ */
+.molecule-styles-here {
+  /* styles */
+  &__block {
+    /* styles */
+  }
+  &--modifier {
+    /* styles */
+  }
+}
