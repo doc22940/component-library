@@ -39,3 +39,11 @@ npm test
 ```
 
 All lint warnings and errors (if any) should now appear in the console.
+
+## FAQ
+
+### How do I enable stylelint in Intellij IDEA?
+
+* Open `Preferences`
+* Search for `stylelint` (or go to `Languages & Frameworks` > `Stylesheets` > `Stylelint`)
+* Click `Enable`
