@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/TelenorFrontend/component-library.svg?branch=master)](https://travis-ci.org/TelenorFrontend/component-library)
+
 # Telenor Frontend Component Library
 
 ## Getting started
