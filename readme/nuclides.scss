@@ -1,0 +1,15 @@
+/*
+ * Nuclides are parts of the stylesheet source that are not
+ * directly usable on their own. This could be mixins,
+ * variables like colors and sizes, or settings.
+ *
+ * To mark a variable or mixin as a nuclide, annotate
+ * it with the @nuclide tag, followed by the name of the nuclide.
+ */
+
+/**
+ * [nuclide description] (keep blank line between description-end and @nuclide)
+ *
+ * @nuclide [nuclide-name]
+ */
+$nuclide-name: [nuclide-value]
