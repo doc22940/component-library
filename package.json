@@ -4,6 +4,10 @@
   "description": "Component library for components used throughout Telenor",
   "main": "index.js",
   "scripts": {
+    "release": "standard-version",
+    "release:major": "npm run release -- --release-as major",
+    "release:minor": "npm run release -- --release-as minor",
+    "release:patch": "npm run release -- --release-as patch",
     "start": "gulp",
     "test": "stylelint components/**/*.scss",
     "watch": "gulp styleguide:watch"
@@ -28,6 +32,7 @@
     "gulp-stylelint": "^3.9.0",
     "nucleus-styleguide": "^1.1.1",
     "sass-lint": "^1.10.2",
+    "standard-version": "^4.2.0",
     "stylelint": "^7.11.1",
     "stylelint-config-standard": "^16.0.0",
     "stylelint-order": "^0.5.0",
