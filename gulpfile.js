@@ -15,6 +15,7 @@ const componentsFolder = 'components';
 gulp.task('connect', function () {
     connect.server({
         root: buildFolder,
+        port: "8888",
         livereload: true
     });
 });
