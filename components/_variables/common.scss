@@ -9,3 +9,27 @@ $tn-color--brand: #007ace;
  * @section Colors
  */
 $tn-color--white: #fff;
+
+/*
+ * @nuclide Opacity normal
+ * @section Common
+ */
+$tn-opacity-normal: 1;
+
+/*
+ * @nuclide Opacity inactive
+ * @section Common
+ */
+$tn-opacity-inactive: .5;
+
+/*
+ * @mixin Box-sizing: border-box (+ children)
+ * @section Common
+ */
+@mixin tn-border-box-everything() {
+  box-sizing: border-box;
+  /* stylelint-disable-next-line selector-no-universal */
+  > * {
+    box-sizing: border-box;
+  }
+}

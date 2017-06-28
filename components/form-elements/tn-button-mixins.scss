@@ -15,5 +15,5 @@
 }
 
 @mixin tn-button--disabled() {
-  opacity: .5;
+  opacity: $tn-opacity-inactive;
 }

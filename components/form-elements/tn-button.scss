@@ -12,6 +12,7 @@
  *  <button class="tn-button tn-button--disabled">Disabled button</button>
  */
 .tn-button {
+  @include tn-border-box-everything;
   @include tn-button;
 
   &--disabled {
