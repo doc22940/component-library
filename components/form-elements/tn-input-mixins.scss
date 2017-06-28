@@ -3,7 +3,7 @@
 
 @mixin tn-input() {
   height: $tn-height--mobile-element;
-  padding: 0 $tn-padding--mobile-element-bordered;
+  padding: 0 $tn-spacing--mobile-element-bordered;
   border: 1px solid $tn-color--gray-border;
   border-radius: $tn-border--mobile-element-border-radius;
   font: $tn-font--default;

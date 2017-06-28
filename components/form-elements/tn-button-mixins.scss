@@ -3,7 +3,7 @@
 @import "../_variables/typography";
 
 @mixin tn-button() {
-  padding: 0 $tn-padding--mobile-element-nonbordered;
+  padding: 0 $tn-spacing--mobile-element-nonbordered;
   transition: opacity .2s ease-in-out;
   border: 0;
   border-radius: $tn-border--mobile-element-border-radius;
