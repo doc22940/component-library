@@ -1,10 +1,6 @@
 @import "../_variables/form-elements";
 @import "../_variables/typography";
 
-/*
- * @mixin Default input styling
- * @section Form elements
- */
 @mixin tn-input() {
   height: $tn-height--mobile-element;
   padding: 0 $tn-padding--mobile-element-bordered;
@@ -13,10 +9,6 @@
   font: $tn-font--default;
 }
 
-/*
- * @mixin Invalid input styling
- * @section Form elements
- */
 @mixin tn-input--invalid() {
   border-color: $tn-color--red-invalid;
   color: $tn-color--red-invalid;

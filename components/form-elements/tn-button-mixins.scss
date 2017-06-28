@@ -2,10 +2,6 @@
 @import "../_variables/common";
 @import "../_variables/typography";
 
-/*
- * @mixin Default button styling
- * @section Form elements
- */
 @mixin tn-button() {
   padding: 0 $tn-padding--mobile-element-nonbordered;
   transition: opacity .2s ease-in-out;
@@ -18,10 +14,6 @@
   cursor: pointer;
 }
 
-/*
- * @mixin Disabled button styling
- * @section Form elements
- */
 @mixin tn-button--disabled() {
   opacity: .5;
 }
