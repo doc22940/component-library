@@ -1,0 +1,13 @@
+@import "../_variables/typography";
+@import "../_variables/common";
+@import "../_variables/form-elements";
+
+@mixin tn-hint() {
+  padding: $tn-spacing--standard-element-nonbordered;
+  border-left: 2px solid $tn-color--gray;
+  background: $tn-color--light-gray-background;
+}
+
+@mixin tn-hint--brand() {
+  border-color: $tn-color--brand;
+}
