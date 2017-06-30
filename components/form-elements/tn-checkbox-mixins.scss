@@ -2,8 +2,7 @@
 @import "../_variables/form-elements";
 @import "../_variables/typography";
 
-$tn-checkbox-border-width: 2px;
-$tn-checkbox-base-size: $tn-standard-icon-size - 2 * $tn-checkbox-border-width;
+$tn-checkbox-base-size: 20px;
 
 @mixin tn-checkboxwrap() {
   @include tn-border-box-everything;
@@ -19,7 +18,7 @@ $tn-checkbox-base-size: $tn-standard-icon-size - 2 * $tn-checkbox-border-width;
 
 @mixin tn-checkboxwrap__text {
   padding-right: 5px;
-  padding-left: $tn-standard-icon-size + 5px;
+  padding-left: $tn-checkbox-base-size + 5px;
   font-size: $tn-font-size--default;
 }
 
@@ -30,7 +29,7 @@ $tn-checkbox-base-size: $tn-standard-icon-size - 2 * $tn-checkbox-border-width;
   width: $tn-checkbox-base-size;
   height: $tn-checkbox-base-size;
   transition: box-shadow $tn-animation-speed--quick ease;
-  border: $tn-checkbox-border-width solid #757575;
+  border: 2px solid #757575;
   border-radius: $tn-border--standard-element-border-radius;
   background: $tn-color--white;
   box-shadow: inset 0 0 0 8px $tn-color--white;

@@ -2,8 +2,7 @@
 @import "../_variables/form-elements";
 @import "../_variables/typography";
 
-$tn-radio-border-width: 2px;
-$tn-radio-base-size: $tn-standard-icon-size - 2 * $tn-radio-border-width;
+$tn-radio-base-size: 20px;
 
 @mixin tn-radiowrap() {
   @include tn-border-box-everything;
@@ -19,7 +18,7 @@ $tn-radio-base-size: $tn-standard-icon-size - 2 * $tn-radio-border-width;
 
 @mixin tn-radiowrap__text {
   padding-right: 5px;
-  padding-left: $tn-standard-icon-size + 5px;
+  padding-left: $tn-radio-base-size + 5px;
   font-size: $tn-font-size--default;
 }
 
@@ -30,7 +29,7 @@ $tn-radio-base-size: $tn-standard-icon-size - 2 * $tn-radio-border-width;
   width: $tn-radio-base-size;
   height: $tn-radio-base-size;
   transition: box-shadow $tn-animation-speed--quick ease;
-  border: $tn-radio-border-width solid #757575;
+  border: 2px solid #757575;
   border-radius: $tn-radio-base-size / 2;
   background: $tn-color--white;
   box-shadow: inset 0 0 0 8px $tn-color--white;
