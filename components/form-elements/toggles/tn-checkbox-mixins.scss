@@ -2,14 +2,12 @@
 @import "../../_variables/sizes";
 @import "../../_variables/typography";
 
-$tn-checkbox-base-size: 20px;
-
 @mixin tn-checkboxwrap() {
   @include tn-border-box-everything;
 
   display: inline-block;
   position: relative;
-  height: $tn-checkbox-base-size;
+  height: $tn-height--toggle;
 }
 
 @mixin tn-checkboxwrap__checkbox {
@@ -18,7 +16,7 @@ $tn-checkbox-base-size: 20px;
 
 @mixin tn-checkboxwrap__text {
   padding-right: 5px;
-  padding-left: $tn-checkbox-base-size + 5px;
+  padding-left: $tn-height--toggle + 5px;
   font-size: $tn-font-size--default;
 }
 
@@ -26,8 +24,8 @@ $tn-checkbox-base-size: 20px;
   @include tn-position-absolute-top-left;
   @include tn-border-box-everything;
 
-  width: $tn-checkbox-base-size;
-  height: $tn-checkbox-base-size;
+  width: $tn-height--toggle;
+  height: $tn-height--toggle;
   transition: box-shadow $tn-animation-speed--quick ease;
   border: 2px solid #757575;
   border-radius: $tn-border--standard-element-border-radius;
@@ -45,9 +43,9 @@ $tn-checkbox-base-size: 20px;
 @mixin tn-checkboxwrap__pseudo-checkbox--checked-fg {
   @include tn-position-absolute-top-left;
 
-  width: $tn-checkbox-base-size;
-  height: $tn-checkbox-base-size;
+  width: $tn-height--toggle;
+  height: $tn-height--toggle;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAD1BMVEUAAAD///////////////+PQt5oAAAABHRSTlMAoGDcgHPOogAAAF9JREFUKM9jGPZAEYsYk4sApqCKiyMWhUBBTIVQ7ZQrFMKikNFFAVOhiIsTQiFC0EUBrhChHaQUoRChFKIQTSlEIZpSsEJ0pVg8I4LN18wuLgaYoWvijCUemA0YhgkAAG9PEzJZOLUnAAAAAElFTkSuQmCC);
-  background-size: $tn-checkbox-base-size;
+  background-size: $tn-height--toggle;
   content: "";
 }
