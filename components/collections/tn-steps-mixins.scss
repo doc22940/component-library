@@ -1,15 +1,16 @@
 @import "../_variables/common";
 @import "../_variables/typography";
+@import "../_variables/form-elements";
 
 @mixin tn-steps() {
   counter-reset: step;
   display: flex;
   flex-wrap: wrap;
-  padding: $tn-spacing--standard-element-nonbordered 0 $tn-spacing--standard-element-nonbordered 0;
+  padding: $tn-spacing--standard-element-nonbordered 0;
 }
 
 @mixin tn-steps--small() {
-  padding: $tn-spacing--small-element-nonbordered 0 $tn-spacing--small-element-nonbordered 0;
+  padding: $tn-spacing--small-element-nonbordered 0;
 
   .tn-step {
     height: $tn-height--small-element;
@@ -27,6 +28,7 @@
 }
 
 @mixin tn-step() {
+  display: inline-block;
   height: $tn-height--standard-element;
   margin: 0 $tn-height--standard-element $tn-spacing--standard-element-nonbordered 0;
   color: $tn-color--default;
