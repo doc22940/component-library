@@ -47,6 +47,18 @@ $tn-opacity-normal: 1;
 $tn-opacity-inactive: .5;
 
 /*
+ * @color Default input border color
+ * @section Colors
+ */
+$tn-color--gray-border: #ddd;
+
+/*
+ * @color Invalid input border color
+ * @section Colors
+ */
+$tn-color--red-invalid: #d32f2f;
+
+/*
  * @nuclide Animation speed (quick)
  * @section Common
  */
