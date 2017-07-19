@@ -17,9 +17,51 @@ $tn-font-size--default: 16px;
 $tn-font-size--large: 18px;
 
 /*
- * @nuclide Default line-height
+ * @nuclide Heading margin top
  * @section Fonts
  */
+$tn-spacing-heading--top: 48px;
+
+/*
+ * @nuclide Heading margin bottom
+ * @section Fonts
+ */
+$tn-spacing-heading--bottom: 12px;
+
+/*
+ * @nuclide Heading 1 size
+ * @section Fonts
+ */
+$tn-font-size--h1: 34px;
+
+/*
+ * @nuclide Heading 2 size
+ * @section Fonts
+ */
+$tn-font-size--h2: 24px;
+
+/*
+ * @nuclide Heading 3 size
+ * @section Fonts
+ */
+$tn-font-size--h3: 20px;
+
+/*
+ * @nuclide Heading 4 size
+ * @section Fonts
+ */
+$tn-font-size--h4: 16px;
+
+/*
+ * @nuclide Default heading line-height
+ * @section Fonts
+ */
+$tn-line-height--heading: 1.25;
+
+/*
+* @nuclide Default line-height
+* @section Fonts
+*/
 $tn-line-height--default: 1.5;
 
 /*
