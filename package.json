@@ -1,6 +1,6 @@
 {
   "name": "telenor-component-library",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Component library for components used throughout Telenor",
   "main": "index.js",
   "scripts": {
