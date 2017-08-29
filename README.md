@@ -2,6 +2,8 @@
 
 # Telenor Frontend Component Library
 
+Live at https://telenorfrontend.github.io/component-library/
+
 ## Getting started
 
 Before you start, make sure you have a recent version of [NodeJS](http://nodejs.org/) environment *>=8.0* with NPM 5.x
