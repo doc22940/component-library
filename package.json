@@ -1,5 +1,5 @@
 {
-  "name": "telenor-component-library",
+  "name": "@telenorfrontend/tn-components",
   "version": "0.1.2",
   "description": "Component library for components used throughout Telenor",
   "main": "index.js",
