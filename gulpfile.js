@@ -22,8 +22,8 @@ gulp.task('connect', function () {
 
 gulp.task('connect:reload', function () {
     gulp.src([
-        `${ buildFolder }/**/*.html`,
-        `${ buildFolder }/**/*.css`
+        `${buildFolder}/**/*.html`,
+        `${buildFolder}/**/*.css`
     ]).pipe(connect.reload());
 });
 
@@ -36,25 +36,25 @@ gulp.task('tn-styleguide', (cb) => {
 });
 
 gulp.task('sass', () => {
-    return gulp.src([`${ componentsFolder }/tn-styleguide.scss`])
+    return gulp.src([`${componentsFolder}/tn-styleguide.scss`])
         .pipe(plumber())
         .pipe(gulpStylelint({
             reporters: [
-                {formatter: 'string', console: true}
+                { formatter: 'string', console: true }
             ]
         }))
         .pipe(sourcemaps.init())
-        .pipe(sass({force: true}).on('error', sass.logError))
+        .pipe(sass({ force: true }).on('error', sass.logError))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest(`${ buildFolder }/styles`));
+        .pipe(gulp.dest(`${buildFolder}/styles`));
 });
 
 gulp.task('sass:watch', () => {
     gulp.watch(
-        [`${ componentsFolder }/*.scss`, `${ componentsFolder }/**/*.scss`],
-        ['sass', 'tn-styleguide', 'connect:reload']
+        [`${componentsFolder}/*.scss`, `${componentsFolder}/**/*.scss`],
+        gulp.series(['sass', 'tn-styleguide', 'connect:reload'])
     );
 });
 
-gulp.task('tn-styleguide:watch', ['tn-styleguide', 'sass', 'connect', 'sass:watch'])
-gulp.task('default', ['tn-styleguide', 'sass']);
+gulp.task('tn-styleguide:watch', gulp.series(['tn-styleguide', 'sass', 'connect', 'sass:watch']));
+gulp.task('default', gulp.series(['tn-styleguide', 'sass']));
