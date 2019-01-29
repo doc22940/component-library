@@ -1,0 +1,2994 @@
+/**
+ * Include components here to make them a part of styleguide
+ */
+/*
+ * @color Brand color
+ * @section Colors
+ */
+/*
+ * @color Muted brand color (50% opacity)
+ * @section Colors
+ */
+/*
+ * @color Base white
+ * @section Colors
+ */
+/*
+ * @color Default font color
+ * @section Colors
+ */
+/*
+ * @color Muted font color
+ * @section Colors
+ */
+/*
+ * @nuclide Opacity normal
+ * @section Common
+ */
+/*
+ * @nuclide Opacity inactive
+ * @section Common
+ */
+/*
+ * @color Default input border color
+ * @section Colors
+ */
+/*
+ * @color Invalid input border color
+ * @section Colors
+ */
+/*
+ * @nuclide Animation speed (quick)
+ * @section Common
+ */
+/*
+ * @mixin Absolute-top-left
+ * @section Common
+ */
+/*
+ * @mixin Box-sizing: border-box (+ children)
+ * @section Common
+ */
+/*
+ * @mixin Generic browser style spacing reset
+ * @section Common
+ */
+/*
+ * @mixin Reset browser list-style
+ * @section Common
+ */
+/*
+ * @mixin Make element unselectable in modern browsers (+ older chrome/safari)
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element border radius
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element height
+ * @section Common
+ */
+/*
+ * @nuclide standard-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element height
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard icon size
+ * @section Common
+ */
+/*
+ * @nuclide Small icon size
+ * @section Common
+ */
+/*
+ * @nuclide Toggle size
+ * Toggle size
+ */
+/*
+ * @nuclide Default font
+ * @section Fonts
+ */
+/*
+ * @nuclide Default font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Slightly larger font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin top
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin bottom
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 1 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 2 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 3 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 4 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Default heading line-height
+ * @section Fonts
+ */
+/*
+* @nuclide Default line-height
+* @section Fonts
+*/
+/*
+ * @nuclide Default documentation line-height
+ * @section Fonts
+ */
+/*
+ * @color Light gray background
+ * @section Colors
+ */
+/*
+ * @color Gray
+ * @section Colors
+ */
+/*
+ * @nuclide Default font
+ * @section Fonts
+ */
+/*
+ * @nuclide Default font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Slightly larger font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin top
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin bottom
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 1 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 2 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 3 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 4 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Default heading line-height
+ * @section Fonts
+ */
+/*
+* @nuclide Default line-height
+* @section Fonts
+*/
+/*
+ * @nuclide Default documentation line-height
+ * @section Fonts
+ */
+/*
+ * @color Light gray background
+ * @section Colors
+ */
+/*
+ * @color Gray
+ * @section Colors
+ */
+/*
+ * @nuclide Standard-element border radius
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element height
+ * @section Common
+ */
+/*
+ * @nuclide standard-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element height
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard icon size
+ * @section Common
+ */
+/*
+ * @nuclide Small icon size
+ * @section Common
+ */
+/*
+ * @nuclide Toggle size
+ * Toggle size
+ */
+/**
+ * @molecule Media
+ * @section Elements
+ * @description
+ *  A media element that comprises several diferent child classes. Examples can be found in the media column structure.
+ * @markup
+ *  <div class="SG-toc">
+ *  <ul>
+ *   <li><strong>tn-media:</strong> main class
+ *     <ul>
+ *       <li><strong>tn-media__heading:</strong> media heading.</li>
+ *       <li><strong>tn-media__image:</strong> an image that spans the width of the media element and retains its aspect ratio.</li>
+ *       <li><strong>tn-media__caption:</strong> centered text.</li>
+ *       <li><strong>tn-media__content:</strong> genral-purpose container for any other element.</li>
+ *      </ul>
+ *   </li>
+ *  </ul>
+ *  </div>
+ *  <div class="tn-media">
+ *    <img class="tn-media__image" src="//placehold.it/1280x720" alt="tn-media__image" />
+ *    <p class="tn-media__caption">The tn-media element fills the parent containers width and scales in height to fit its content.</p>
+ *  </div>
+ */
+.tn-media {
+  width: 100%; }
+  .tn-media__heading {
+    margin-top: 48px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.25;
+    margin: 16px 0; }
+  .tn-media__image {
+    display: block;
+    width: 100%;
+    height: auto; }
+  .tn-media__caption {
+    display: block;
+    width: 100%;
+    margin: 16px 0;
+    text-align: center; }
+  .tn-media__content {
+    width: 100%; }
+
+/*
+ * @color Brand color
+ * @section Colors
+ */
+/*
+ * @color Muted brand color (50% opacity)
+ * @section Colors
+ */
+/*
+ * @color Base white
+ * @section Colors
+ */
+/*
+ * @color Default font color
+ * @section Colors
+ */
+/*
+ * @color Muted font color
+ * @section Colors
+ */
+/*
+ * @nuclide Opacity normal
+ * @section Common
+ */
+/*
+ * @nuclide Opacity inactive
+ * @section Common
+ */
+/*
+ * @color Default input border color
+ * @section Colors
+ */
+/*
+ * @color Invalid input border color
+ * @section Colors
+ */
+/*
+ * @nuclide Animation speed (quick)
+ * @section Common
+ */
+/*
+ * @mixin Absolute-top-left
+ * @section Common
+ */
+/*
+ * @mixin Box-sizing: border-box (+ children)
+ * @section Common
+ */
+/*
+ * @mixin Generic browser style spacing reset
+ * @section Common
+ */
+/*
+ * @mixin Reset browser list-style
+ * @section Common
+ */
+/*
+ * @mixin Make element unselectable in modern browsers (+ older chrome/safari)
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element border radius
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element height
+ * @section Common
+ */
+/*
+ * @nuclide standard-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element height
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard icon size
+ * @section Common
+ */
+/*
+ * @nuclide Small icon size
+ * @section Common
+ */
+/*
+ * @nuclide Toggle size
+ * Toggle size
+ */
+/*
+ * @nuclide Default font
+ * @section Fonts
+ */
+/*
+ * @nuclide Default font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Slightly larger font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin top
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin bottom
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 1 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 2 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 3 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 4 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Default heading line-height
+ * @section Fonts
+ */
+/*
+* @nuclide Default line-height
+* @section Fonts
+*/
+/*
+ * @nuclide Default documentation line-height
+ * @section Fonts
+ */
+/*
+ * @color Light gray background
+ * @section Colors
+ */
+/*
+ * @color Gray
+ * @section Colors
+ */
+/**
+ * @molecule Table
+ * @section Elements
+ * @description
+ *  A basic table.
+ * @modifiers
+ *  .tn-table--bordered modifier for a table with a surrounding border
+ *  .tn-table--separators modifier for borders between each column
+ *  .tn-table--accented modifier to accent the table header
+ *  .tn-table--accented--brand modifier to accent the table header with the brand color
+ *  .tn-table__cell--centered modifier to align text in the center of a cell (td or th)
+ * @markup
+ *  <h3>Selected mobile Technologies</h3>
+ *  <table class="tn-table">
+ *    <thead class="tn-thead">
+ *      <tr class="tn-tr">
+ *        <th class="tn-th">Generation</th class="tn-th">
+ *        <th class="tn-th">Technology</th class="tn-th">
+ *      </tr class="tn-tr">
+ *    </thead>
+ *    <tbody class="tn-tbody">
+ *      <tr class="tn-tr">
+ *        <td class="tn-td">1G</td class="tn-td">
+ *        <td class="tn-td">NMT</td class="tn-td">
+ *      </tr class="tn-tr">
+ *      <tr class="tn-tr">
+ *        <td class="tn-td">2G</td class="tn-td">
+ *        <td class="tn-td">GSM</td class="tn-td">
+ *      </tr class="tn-tr">
+ *      <tr class="tn-tr">
+ *        <td class="tn-td">2G transitional</td class="tn-td">
+ *        <td class="tn-td">GPRS, EDGE</td class="tn-td">
+ *      </tr class="tn-tr">
+ *      <tr class="tn-tr">
+ *        <td class="tn-td">3G</td class="tn-td">
+ *        <td class="tn-td">UMTS</td class="tn-td">
+ *      </tr class="tn-tr">
+ *      <tr class="tn-tr">
+ *        <td class="tn-td">3G transitional</td class="tn-td">
+ *        <td class="tn-td">HSPA, HSPA+, LTE</td class="tn-td">
+ *      </tr class="tn-tr">
+ *      <tr class="tn-tr">
+ *        <td class="tn-td">4G</td class="tn-td">
+ *        <td class="tn-td">LTE Advanced</td class="tn-td">
+ *      </tr class="tn-tr">
+ *    </tbody class="tn-tbody">
+ *  </table>
+ *  <h3>Payment methods (--bordered --separators --accented--brand)</h3>
+ *  <table class="tn-table tn-table--bordered tn-table--separators tn-table--accented--brand">
+ *    <thead class="tn-thead">
+ *      <tr class="tn-tr">
+ *        <th class="tn-th" rowspan="2">Country</th class="tn-th">
+ *        <th class="tn-th tn-table__cell--centered" colspan="2">GLOBAL SOLUTIONS</th class="tn-th">
+ *        <th class="tn-th tn-table__cell--centered" colspan="3">MOBILE WALLETS</th class="tn-th">
+ *      </tr class="tn-tr">
+ *      <tr class="tn-tr">
+ *        <th class="tn-th">DOB</th class="tn-th">
+ *        <th class="tn-th">Cards</th class="tn-th">
+ *        <th class="tn-th">Vipps</th class="tn-th">
+ *        <th class="tn-th">Easypaysia</th class="tn-th">
+ *        <th class="tn-th">MyClear</th class="tn-th">
+ *      </tr class="tn-tr">
+ *    </th class="tn-th"ead class="tn-th class="tn-th"ead">
+ *    <tbody class="tn-tbody">
+ *      <tr class="tn-tr">
+ *        <th class="tn-th">Bangladesh</th class="tn-th">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered"></td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered"></td class="tn-td">
+ *      </tr class="tn-tr">
+ *      <tr class="tn-tr">
+ *        <th class="tn-th">Malaysia</th class="tn-th">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered"></td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered"></td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *      </tr class="tn-tr">
+ *      <tr class="tn-tr">
+ *        <th class="tn-th">Norway</th class="tn-th">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered"></td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered"></td class="tn-td">
+ *      </tr class="tn-tr">
+ *      <tr class="tn-tr">
+ *        <th class="tn-th">Thailand</th class="tn-th">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered"></td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered"></td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *      </tr class="tn-tr">
+ *    </tbody class="tn-tbody">
+ *  </table>
+ */
+.tn-table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse; }
+  .tn-table .tn-th {
+    color: rgba(0, 0, 0, 0.67);
+    font-weight: normal;
+    vertical-align: bottom;
+    padding: 12px;
+    text-align: left; }
+  .tn-table .tn-td {
+    padding: 12px;
+    text-align: left; }
+  .tn-table .tn-thead .tn-table__cell--centered,
+  .tn-table .tn-tbody .tn-table__cell--centered {
+    text-align: center; }
+  .tn-table .tn-tr + .tn-tr > .tn-td,
+  .tn-table .tn-tr + .tn-tr > .tn-th {
+    border-top: 1px solid #ddd; }
+  .tn-table .tn-thead .tn-tr > .tn-td,
+  .tn-table .tn-thead .tn-tr > .tn-th {
+    border-bottom: 1px solid #ddd; }
+  .tn-table--separators .tn-th,
+  .tn-table--separators .tn-td {
+    border-right: 1px solid #ddd; }
+  .tn-table--separators .tn-tr > .tn-th:last-child,
+  .tn-table--separators .tn-tr > .tn-td:last-child {
+    border-right: none; }
+  .tn-table--bordered {
+    border: 1px solid #ddd; }
+  .tn-table--accented .tn-thead .tn-tr {
+    background-color: #f5f5f5; }
+  .tn-table--accented--brand .tn-thead .tn-tr {
+    background-color: rgba(0, 122, 206, 0.05); }
+
+/*
+ * @nuclide Standard-element border radius
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element height
+ * @section Common
+ */
+/*
+ * @nuclide standard-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element height
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard icon size
+ * @section Common
+ */
+/*
+ * @nuclide Small icon size
+ * @section Common
+ */
+/*
+ * @nuclide Toggle size
+ * Toggle size
+ */
+/**
+ * @structure Media column
+ * @section Collections
+ * @description
+ *  A column of evenly sized media elements.
+ * @markup
+ *  <h2 class="tn-h2">Two images with captions</h2>
+ *  <div class="tn-media-column">
+ *    <div class="tn-media">
+ *      <img class="tn-media__image" src="//placehold.it/1280x720" alt="tn-media__image" />
+ *      <p class="tn-media__caption">Media caption.</p>
+ *    </div>
+ *    <div class="tn-media">
+ *      <img class="tn-media__image" src="//placehold.it/1280x720" alt="tn-media__image" />
+ *      <p class="tn-media__caption">Placeholder image.</p>
+ *    </div>
+ *  </div>
+ *  <h2 class="tn-h2">Image and text</h2>
+ *  <div class="tn-media-column">
+ *    <div class="tn-media">
+ *      <h3 class="tn-media__heading">Lorem ipsum</h3>
+ *      <div class="tn-media__content"><p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium tristique ex. Nam eget arcu sit amet nisi porttitor accumsan. Nunc gravida commodo tortor, id interdum est interdum viverra. Nulla in vehicula nunc. Cras ac eros id nibh laoreet congue. Cras et varius mauris. Nulla ex enim, dapibus nec tempor sed, eleifend et sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div>
+ *    </div>
+ *    <div class="tn-media">
+ *      <img class="tn-media__image" src="//placehold.it/1024x1024" alt="tn-media__image" />
+ *    </div>
+ *  </div>
+ *  <h2 class="tn-h2">Variety column</h2>
+ *  <div class="tn-media-column">
+ *    <div class="tn-media">
+ *      <img class="tn-media__image" src="//placehold.it/1280x720" alt="tn-media__image" />
+ *    </div>
+*    <div class="tn-media">
+ *      <img class="tn-media__image" src="//placehold.it/1280x720" alt="tn-media__image" />
+ *      <p class="tn-media__caption">Media caption.</p>
+ *    </div>
+ *    <div class="tn-media">
+ *      <h3 class="tn-media__heading">Lorem ipsum</p>
+ *      <div class="tn-media__content"><p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium tristique ex. Nam eget arcu sit amet nisi porttitor accumsan.</p></div>
+ *    </div>
+ *    <div class="tn-media">
+ *      <img class="tn-media__image" src="//placehold.it/1280x720" alt="tn-media__image" />
+ *      <div class="tn-media__content"><p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium tristique ex. Nam eget arcu sit amet nisi porttitor accumsan. </p></div>
+ *    </div>
+ *    <div class="tn-media">
+ *      <img class="tn-media__image" src="//placehold.it/1280x720" alt="tn-media__image" />
+ *      <h3 class="tn-media__heading">Lorem ipsum</h3>
+ *      <div class="tn-media__content"><p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium tristique ex. Nam eget arcu sit amet nisi porttitor accumsan. </p></div>
+ *    </div>
+ *  </div>
+ */
+.tn-media-column {
+  display: flex; }
+  .tn-media-column .tn-media + .tn-media {
+    margin-left: 16px; }
+
+/*
+ * @color Brand color
+ * @section Colors
+ */
+/*
+ * @color Muted brand color (50% opacity)
+ * @section Colors
+ */
+/*
+ * @color Base white
+ * @section Colors
+ */
+/*
+ * @color Default font color
+ * @section Colors
+ */
+/*
+ * @color Muted font color
+ * @section Colors
+ */
+/*
+ * @nuclide Opacity normal
+ * @section Common
+ */
+/*
+ * @nuclide Opacity inactive
+ * @section Common
+ */
+/*
+ * @color Default input border color
+ * @section Colors
+ */
+/*
+ * @color Invalid input border color
+ * @section Colors
+ */
+/*
+ * @nuclide Animation speed (quick)
+ * @section Common
+ */
+/*
+ * @mixin Absolute-top-left
+ * @section Common
+ */
+/*
+ * @mixin Box-sizing: border-box (+ children)
+ * @section Common
+ */
+/*
+ * @mixin Generic browser style spacing reset
+ * @section Common
+ */
+/*
+ * @mixin Reset browser list-style
+ * @section Common
+ */
+/*
+ * @mixin Make element unselectable in modern browsers (+ older chrome/safari)
+ * @section Common
+ */
+/*
+ * @nuclide Standard spacing for elements in collections
+ * @section Common
+ */
+/*
+ * @color Brand color
+ * @section Colors
+ */
+/*
+ * @color Muted brand color (50% opacity)
+ * @section Colors
+ */
+/*
+ * @color Base white
+ * @section Colors
+ */
+/*
+ * @color Default font color
+ * @section Colors
+ */
+/*
+ * @color Muted font color
+ * @section Colors
+ */
+/*
+ * @nuclide Opacity normal
+ * @section Common
+ */
+/*
+ * @nuclide Opacity inactive
+ * @section Common
+ */
+/*
+ * @color Default input border color
+ * @section Colors
+ */
+/*
+ * @color Invalid input border color
+ * @section Colors
+ */
+/*
+ * @nuclide Animation speed (quick)
+ * @section Common
+ */
+/*
+ * @mixin Absolute-top-left
+ * @section Common
+ */
+/*
+ * @mixin Box-sizing: border-box (+ children)
+ * @section Common
+ */
+/*
+ * @mixin Generic browser style spacing reset
+ * @section Common
+ */
+/*
+ * @mixin Reset browser list-style
+ * @section Common
+ */
+/*
+ * @mixin Make element unselectable in modern browsers (+ older chrome/safari)
+ * @section Common
+ */
+/**
+ * Breadcrumbs to indicate the user's current position in a hierarchical structure
+ *
+ * @molecule Breadcrumbs
+ * @section Collections
+ * @markup
+ *  <ol class="tn-breadcrumbs">
+ *   <li class="tn-breadcrumb"><a href="#" class="tn-a">Home</a></li>
+ *   <li class="tn-breadcrumb"><a href="#" class="tn-a">Somewhere</a></li>
+ *   <li class="tn-breadcrumb">Current page</li>
+ *  </ol>
+ */
+.tn-breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .tn-breadcrumbs .tn-breadcrumb {
+    box-sizing: border-box;
+    /* stylelint-disable-next-line selector-max-universal */
+    display: inline-block; }
+    .tn-breadcrumbs .tn-breadcrumb > * {
+      box-sizing: border-box; }
+    .tn-breadcrumbs .tn-breadcrumb:not(:first-child)::before {
+      padding: 0 6px;
+      color: rgba(0, 0, 0, 0.87);
+      content: "/"; }
+
+/*
+ * @color Brand color
+ * @section Colors
+ */
+/*
+ * @color Muted brand color (50% opacity)
+ * @section Colors
+ */
+/*
+ * @color Base white
+ * @section Colors
+ */
+/*
+ * @color Default font color
+ * @section Colors
+ */
+/*
+ * @color Muted font color
+ * @section Colors
+ */
+/*
+ * @nuclide Opacity normal
+ * @section Common
+ */
+/*
+ * @nuclide Opacity inactive
+ * @section Common
+ */
+/*
+ * @color Default input border color
+ * @section Colors
+ */
+/*
+ * @color Invalid input border color
+ * @section Colors
+ */
+/*
+ * @nuclide Animation speed (quick)
+ * @section Common
+ */
+/*
+ * @mixin Absolute-top-left
+ * @section Common
+ */
+/*
+ * @mixin Box-sizing: border-box (+ children)
+ * @section Common
+ */
+/*
+ * @mixin Generic browser style spacing reset
+ * @section Common
+ */
+/*
+ * @mixin Reset browser list-style
+ * @section Common
+ */
+/*
+ * @mixin Make element unselectable in modern browsers (+ older chrome/safari)
+ * @section Common
+ */
+/*
+ * @nuclide Default font
+ * @section Fonts
+ */
+/*
+ * @nuclide Default font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Slightly larger font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin top
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin bottom
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 1 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 2 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 3 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 4 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Default heading line-height
+ * @section Fonts
+ */
+/*
+* @nuclide Default line-height
+* @section Fonts
+*/
+/*
+ * @nuclide Default documentation line-height
+ * @section Fonts
+ */
+/*
+ * @color Light gray background
+ * @section Colors
+ */
+/*
+ * @color Gray
+ * @section Colors
+ */
+/*
+ * @nuclide Standard-element border radius
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element height
+ * @section Common
+ */
+/*
+ * @nuclide standard-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element height
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard icon size
+ * @section Common
+ */
+/*
+ * @nuclide Small icon size
+ * @section Common
+ */
+/*
+ * @nuclide Toggle size
+ * Toggle size
+ */
+/**
+ * @molecule Steps
+ * @section Collections
+ * @description
+ *  Overview of the steps of a process. The active element is marked by a BEM modifier.
+  * @modifiers
+ *  .tn-steps--small modifier for smaller steps
+ * @markup
+ *  <h3>Steps variations:</h3>
+ *  <ol class="tn-steps">
+ *   <li class="tn-step tn-step--active">Create Transaction</li>
+ *   <li class="tn-step">Payment</li>
+ *   <li class="tn-step">Verify Transaction</li>
+ *  </ol>
+ *  <h3>Steps variations (--small):</h3>
+ *  <ol class="tn-steps tn-steps--small">
+ *   <li class="tn-step tn-step--active">Create Transaction</li>
+ *   <li class="tn-step">Payment</li>
+ *   <li class="tn-step">Verify Transaction</li>
+ *  </ol>
+ */
+.tn-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px 0; }
+  .tn-steps--small {
+    padding: 12px 0; }
+    .tn-steps--small .tn-step {
+      height: 40px;
+      margin: 0 40px 12px 0;
+      font-size: 16px;
+      line-height: 16px; }
+      .tn-steps--small .tn-step::before {
+        width: 40px;
+        height: 40px;
+        margin-right: 12px;
+        line-height: 40px; }
+
+.tn-step {
+  box-sizing: border-box;
+  /* stylelint-disable-next-line selector-max-universal */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  height: 56px;
+  margin: 0 56px 16px 0;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 18px;
+  line-height: 56px;
+  opacity: 0.5; }
+  .tn-step > * {
+    box-sizing: border-box; }
+  .tn-step::before {
+    display: inline-block;
+    counter-increment: step;
+    width: 56px;
+    height: 56px;
+    margin-right: 16px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: #fff;
+    line-height: 56px;
+    text-align: center;
+    content: counter(step); }
+  .tn-step--active {
+    color: rgba(0, 0, 0, 0.87);
+    opacity: 1; }
+    .tn-step--active::before {
+      background-color: #007ace; }
+
+/*
+ * @nuclide Standard-element border radius
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element height
+ * @section Common
+ */
+/*
+ * @nuclide standard-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element height
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard icon size
+ * @section Common
+ */
+/*
+ * @nuclide Small icon size
+ * @section Common
+ */
+/*
+ * @nuclide Toggle size
+ * Toggle size
+ */
+/*
+ * @color Brand color
+ * @section Colors
+ */
+/*
+ * @color Muted brand color (50% opacity)
+ * @section Colors
+ */
+/*
+ * @color Base white
+ * @section Colors
+ */
+/*
+ * @color Default font color
+ * @section Colors
+ */
+/*
+ * @color Muted font color
+ * @section Colors
+ */
+/*
+ * @nuclide Opacity normal
+ * @section Common
+ */
+/*
+ * @nuclide Opacity inactive
+ * @section Common
+ */
+/*
+ * @color Default input border color
+ * @section Colors
+ */
+/*
+ * @color Invalid input border color
+ * @section Colors
+ */
+/*
+ * @nuclide Animation speed (quick)
+ * @section Common
+ */
+/*
+ * @mixin Absolute-top-left
+ * @section Common
+ */
+/*
+ * @mixin Box-sizing: border-box (+ children)
+ * @section Common
+ */
+/*
+ * @mixin Generic browser style spacing reset
+ * @section Common
+ */
+/*
+ * @mixin Reset browser list-style
+ * @section Common
+ */
+/*
+ * @mixin Make element unselectable in modern browsers (+ older chrome/safari)
+ * @section Common
+ */
+/*
+ * @nuclide Default font
+ * @section Fonts
+ */
+/*
+ * @nuclide Default font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Slightly larger font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin top
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin bottom
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 1 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 2 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 3 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 4 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Default heading line-height
+ * @section Fonts
+ */
+/*
+* @nuclide Default line-height
+* @section Fonts
+*/
+/*
+ * @nuclide Default documentation line-height
+ * @section Fonts
+ */
+/*
+ * @color Light gray background
+ * @section Colors
+ */
+/*
+ * @color Gray
+ * @section Colors
+ */
+/**
+ * @atom Basic button
+ * @section Form elements
+ * @description
+ *  Standard button styling for action buttons
+ * @modifiers
+ *  .tn-button--small modifier for smaller buttons
+ *  .tn-button--disabled modifier for disabled buttons
+ * @markup
+ *  <h3>Button variations:</h3>
+ *  <button class="tn-button">Action button</button>
+ *  <button class="tn-button tn-button--disabled">Disabled button</button>
+ *  <h3>Button variations (--small):</h3>
+ *  <button class="tn-button tn-button--small">Small button</button>
+ *  <button class="tn-button tn-button--small tn-button--disabled">Small disabled button</button>
+ */
+.tn-button {
+  -webkit-touch-callout: none;
+  user-select: none;
+  box-sizing: border-box;
+  /* stylelint-disable-next-line selector-max-universal */
+  padding: 0 16px;
+  transition: opacity .2s ease-in-out;
+  border: 0;
+  border-radius: 2px;
+  background: #007ace;
+  color: #fff;
+  font-size: 18px;
+  line-height: 56px;
+  cursor: pointer; }
+  .tn-button > * {
+    box-sizing: border-box; }
+  .tn-button--small {
+    padding: 0 12px;
+    font-size: 16px;
+    line-height: 40px; }
+  .tn-button--disabled {
+    opacity: 0.5; }
+
+/*
+ * @color Brand color
+ * @section Colors
+ */
+/*
+ * @color Muted brand color (50% opacity)
+ * @section Colors
+ */
+/*
+ * @color Base white
+ * @section Colors
+ */
+/*
+ * @color Default font color
+ * @section Colors
+ */
+/*
+ * @color Muted font color
+ * @section Colors
+ */
+/*
+ * @nuclide Opacity normal
+ * @section Common
+ */
+/*
+ * @nuclide Opacity inactive
+ * @section Common
+ */
+/*
+ * @color Default input border color
+ * @section Colors
+ */
+/*
+ * @color Invalid input border color
+ * @section Colors
+ */
+/*
+ * @nuclide Animation speed (quick)
+ * @section Common
+ */
+/*
+ * @mixin Absolute-top-left
+ * @section Common
+ */
+/*
+ * @mixin Box-sizing: border-box (+ children)
+ * @section Common
+ */
+/*
+ * @mixin Generic browser style spacing reset
+ * @section Common
+ */
+/*
+ * @mixin Reset browser list-style
+ * @section Common
+ */
+/*
+ * @mixin Make element unselectable in modern browsers (+ older chrome/safari)
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element border radius
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element height
+ * @section Common
+ */
+/*
+ * @nuclide standard-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element height
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard icon size
+ * @section Common
+ */
+/*
+ * @nuclide Small icon size
+ * @section Common
+ */
+/*
+ * @nuclide Toggle size
+ * Toggle size
+ */
+/*
+ * @nuclide Default font
+ * @section Fonts
+ */
+/*
+ * @nuclide Default font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Slightly larger font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin top
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin bottom
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 1 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 2 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 3 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 4 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Default heading line-height
+ * @section Fonts
+ */
+/*
+* @nuclide Default line-height
+* @section Fonts
+*/
+/*
+ * @nuclide Default documentation line-height
+ * @section Fonts
+ */
+/*
+ * @color Light gray background
+ * @section Colors
+ */
+/*
+ * @color Gray
+ * @section Colors
+ */
+/**
+ * @atom Basic input-field
+ * @section Form elements > Input fields
+ * @description
+ *  Standard input styling for text/email/phone, etc
+ * @modifiers
+ *  .tn-input--small modifier for smaller inputs
+ *  .tn-input--invalid modifier for when input value is invalid
+ * @markup
+ *  <h3>Input variations:</h3>
+ *  <input class="tn-input" placeholder="Placeholder ...">
+ *  <input class="tn-input" value="value">
+ *  <input class="tn-input tn-input--invalid" value="invalid-value">
+ *  <h3>Input variations (--small):</h3>
+ *  <input class="tn-input tn-input--small" placeholder="Placeholder ...">
+ *  <input class="tn-input tn-input--small" value="value">
+ *  <input class="tn-input tn-input--small tn-input--invalid" value="invalid-value">
+ */
+.tn-input {
+  box-sizing: border-box;
+  /* stylelint-disable-next-line selector-max-universal */
+  height: 56px;
+  padding: 0 15px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  font: 16px arial; }
+  .tn-input > * {
+    box-sizing: border-box; }
+  .tn-input--small {
+    height: 40px;
+    padding: 0 11px; }
+  .tn-input--invalid {
+    border-color: #d32f2f;
+    color: #d32f2f; }
+
+/**
+ * @molecule Input-field with icon
+ * @section Form elements > Input fields
+ * @description
+ *  Standard input styling for text/email/phone, etc
+ * @modifiers
+ *  .tn-inputwrap--small modifier for smaller inputs
+ *  .tn-inputwrap--has-value modifier for when child input has value (changes icon opacity from .5 to 1)
+ * @markup
+ *  <h3>Icon-input variations:</h3>
+ *  <div class="tn-inputwrap">
+ *      <div class="tn-inputwrap__icon">
+ *          <svg width="24" height="24"><circle cx="12" cy="12" r="12" fill="#333"/></svg>
+ *      </div>
+ *      <input class="tn-inputwrap__input" placeholder="Placeholder ...">
+ *  </div>
+ *  <br>
+ *  <div class="tn-inputwrap tn-inputwrap--has-value">
+ *      <div class="tn-inputwrap__icon">
+ *          <svg width="24" height="24"><circle cx="12" cy="12" r="12" fill="#333"/></svg>
+ *      </div>
+ *      <input class="tn-inputwrap__input" value="value">
+ *  </div>
+ *  <br>
+ *  <h3>Icon-input variations (--small):</h3>
+ *  <div class="tn-inputwrap tn-inputwrap--small">
+ *      <div class="tn-inputwrap__icon">
+ *          <svg width="16" height="16"><circle cx="8" cy="8" r="8" fill="#333"/></svg>
+ *      </div>
+ *      <input class="tn-inputwrap__input" placeholder="Placeholder ...">
+ *  </div>
+ *  <br>
+ *  <div class="tn-inputwrap tn-inputwrap--small tn-inputwrap--has-value">
+ *      <div class="tn-inputwrap__icon">
+ *          <svg width="16" height="16"><circle cx="8" cy="8" r="8" fill="#333"/></svg>
+ *      </div>
+ *      <input class="tn-inputwrap__input" value="value">
+ *  </div>
+ */
+.tn-inputwrap {
+  box-sizing: border-box;
+  /* stylelint-disable-next-line selector-max-universal */
+  position: relative;
+  height: 56px; }
+  .tn-inputwrap > * {
+    box-sizing: border-box; }
+  .tn-inputwrap__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    margin: 16px;
+    z-index: 1;
+    opacity: 0.5; }
+  .tn-inputwrap__input {
+    height: 56px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    font: 16px arial;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 56px; }
+  .tn-inputwrap--has-value .tn-inputwrap__icon {
+    opacity: 1; }
+  .tn-inputwrap--small {
+    height: 40px; }
+    .tn-inputwrap--small .tn-inputwrap__icon {
+      width: 16px;
+      height: 16px;
+      margin: 12px; }
+    .tn-inputwrap--small .tn-inputwrap__input {
+      height: 40px;
+      padding-left: 40px;
+      line-height: 40px; }
+
+/*
+ * @color Brand color
+ * @section Colors
+ */
+/*
+ * @color Muted brand color (50% opacity)
+ * @section Colors
+ */
+/*
+ * @color Base white
+ * @section Colors
+ */
+/*
+ * @color Default font color
+ * @section Colors
+ */
+/*
+ * @color Muted font color
+ * @section Colors
+ */
+/*
+ * @nuclide Opacity normal
+ * @section Common
+ */
+/*
+ * @nuclide Opacity inactive
+ * @section Common
+ */
+/*
+ * @color Default input border color
+ * @section Colors
+ */
+/*
+ * @color Invalid input border color
+ * @section Colors
+ */
+/*
+ * @nuclide Animation speed (quick)
+ * @section Common
+ */
+/*
+ * @mixin Absolute-top-left
+ * @section Common
+ */
+/*
+ * @mixin Box-sizing: border-box (+ children)
+ * @section Common
+ */
+/*
+ * @mixin Generic browser style spacing reset
+ * @section Common
+ */
+/*
+ * @mixin Reset browser list-style
+ * @section Common
+ */
+/*
+ * @mixin Make element unselectable in modern browsers (+ older chrome/safari)
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element border radius
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element height
+ * @section Common
+ */
+/*
+ * @nuclide standard-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element height
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard icon size
+ * @section Common
+ */
+/*
+ * @nuclide Small icon size
+ * @section Common
+ */
+/*
+ * @nuclide Toggle size
+ * Toggle size
+ */
+/*
+ * @nuclide Default font
+ * @section Fonts
+ */
+/*
+ * @nuclide Default font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Slightly larger font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin top
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin bottom
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 1 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 2 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 3 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 4 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Default heading line-height
+ * @section Fonts
+ */
+/*
+* @nuclide Default line-height
+* @section Fonts
+*/
+/*
+ * @nuclide Default documentation line-height
+ * @section Fonts
+ */
+/*
+ * @color Light gray background
+ * @section Colors
+ */
+/*
+ * @color Gray
+ * @section Colors
+ */
+/**
+ * @molecule Standard checkbox
+ * @section Form elements > Toggles
+ * @description
+ *  Standard styling for checkboxes
+ * @markup
+ *  <label class="tn-checkboxwrap">
+ *    <input class="tn-checkboxwrap__checkbox" type="checkbox">
+ *    <span class="tn-checkboxwrap__text">Text</span>
+ *  </label>
+ *  <label class="tn-checkboxwrap">
+ *    <input class="tn-checkboxwrap__checkbox" type="checkbox" checked>
+ *    <span class="tn-checkboxwrap__text">Text</span>
+ *  </label>
+ */
+.tn-checkboxwrap {
+  -webkit-touch-callout: none;
+  user-select: none;
+  box-sizing: border-box;
+  /* stylelint-disable-next-line selector-max-universal */
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  line-height: 20px; }
+  .tn-checkboxwrap > * {
+    box-sizing: border-box; }
+  .tn-checkboxwrap__checkbox {
+    display: none; }
+  .tn-checkboxwrap__text {
+    padding-right: 5px;
+    padding-left: 25px;
+    font-size: 16px; }
+  .tn-checkboxwrap__checkbox + .tn-checkboxwrap__text::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    /* stylelint-disable-next-line selector-max-universal */
+    width: 20px;
+    height: 20px;
+    transition: box-shadow 150ms ease;
+    border: 2px solid #757575;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: inset 0 0 0 8px #fff;
+    content: ""; }
+    .tn-checkboxwrap__checkbox + .tn-checkboxwrap__text::before > * {
+      box-sizing: border-box; }
+  .tn-checkboxwrap__checkbox:checked + .tn-checkboxwrap__text::before {
+    border-color: #007ace;
+    background-color: #007ace;
+    box-shadow: inset 0 0 0 0 #fff; }
+  .tn-checkboxwrap__checkbox:checked + .tn-checkboxwrap__text::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAD1BMVEUAAAD///////////////+PQt5oAAAABHRSTlMAoGDcgHPOogAAAF9JREFUKM9jGPZAEYsYk4sApqCKiyMWhUBBTIVQ7ZQrFMKikNFFAVOhiIsTQiFC0EUBrhChHaQUoRChFKIQTSlEIZpSsEJ0pVg8I4LN18wuLgaYoWvijCUemA0YhgkAAG9PEzJZOLUnAAAAAElFTkSuQmCC);
+    background-size: 20px;
+    content: ""; }
+
+/*
+ * @color Brand color
+ * @section Colors
+ */
+/*
+ * @color Muted brand color (50% opacity)
+ * @section Colors
+ */
+/*
+ * @color Base white
+ * @section Colors
+ */
+/*
+ * @color Default font color
+ * @section Colors
+ */
+/*
+ * @color Muted font color
+ * @section Colors
+ */
+/*
+ * @nuclide Opacity normal
+ * @section Common
+ */
+/*
+ * @nuclide Opacity inactive
+ * @section Common
+ */
+/*
+ * @color Default input border color
+ * @section Colors
+ */
+/*
+ * @color Invalid input border color
+ * @section Colors
+ */
+/*
+ * @nuclide Animation speed (quick)
+ * @section Common
+ */
+/*
+ * @mixin Absolute-top-left
+ * @section Common
+ */
+/*
+ * @mixin Box-sizing: border-box (+ children)
+ * @section Common
+ */
+/*
+ * @mixin Generic browser style spacing reset
+ * @section Common
+ */
+/*
+ * @mixin Reset browser list-style
+ * @section Common
+ */
+/*
+ * @mixin Make element unselectable in modern browsers (+ older chrome/safari)
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element border radius
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element height
+ * @section Common
+ */
+/*
+ * @nuclide standard-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element height
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard icon size
+ * @section Common
+ */
+/*
+ * @nuclide Small icon size
+ * @section Common
+ */
+/*
+ * @nuclide Toggle size
+ * Toggle size
+ */
+/*
+ * @nuclide Default font
+ * @section Fonts
+ */
+/*
+ * @nuclide Default font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Slightly larger font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin top
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin bottom
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 1 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 2 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 3 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 4 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Default heading line-height
+ * @section Fonts
+ */
+/*
+* @nuclide Default line-height
+* @section Fonts
+*/
+/*
+ * @nuclide Default documentation line-height
+ * @section Fonts
+ */
+/*
+ * @color Light gray background
+ * @section Colors
+ */
+/*
+ * @color Gray
+ * @section Colors
+ */
+/**
+ * @molecule Standard radio-button
+ * @section Form elements > Toggles
+ * @description
+ *  Standard styling for radio-buttons
+ * @markup
+ *  <label class="tn-radiowrap">
+ *    <input class="tn-radiowrap__radio" type="radio" name="x">
+ *    <span class="tn-radiowrap__text">Text</span>
+ *  </label>
+ *  <label class="tn-radiowrap">
+ *    <input class="tn-radiowrap__radio" type="radio" name="x" checked>
+ *    <span class="tn-radiowrap__text">Text</span>
+ *  </label>
+ */
+.tn-radiowrap {
+  -webkit-touch-callout: none;
+  user-select: none;
+  box-sizing: border-box;
+  /* stylelint-disable-next-line selector-max-universal */
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  line-height: 20px; }
+  .tn-radiowrap > * {
+    box-sizing: border-box; }
+  .tn-radiowrap__radio {
+    display: none; }
+  .tn-radiowrap__text {
+    padding-right: 5px;
+    padding-left: 25px;
+    font-size: 16px; }
+  .tn-radiowrap__radio + .tn-radiowrap__text::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    /* stylelint-disable-next-line selector-max-universal */
+    width: 20px;
+    height: 20px;
+    transition: box-shadow 150ms ease;
+    border: 2px solid #757575;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: inset 0 0 0 8px #fff;
+    content: ""; }
+    .tn-radiowrap__radio + .tn-radiowrap__text::before > * {
+      box-sizing: border-box; }
+  .tn-radiowrap__radio:checked + .tn-radiowrap__text::before {
+    border-color: #007ace;
+    background-color: #007ace;
+    box-shadow: inset 0 0 0 3px #fff; }
+
+/*
+ * @color Brand color
+ * @section Colors
+ */
+/*
+ * @color Muted brand color (50% opacity)
+ * @section Colors
+ */
+/*
+ * @color Base white
+ * @section Colors
+ */
+/*
+ * @color Default font color
+ * @section Colors
+ */
+/*
+ * @color Muted font color
+ * @section Colors
+ */
+/*
+ * @nuclide Opacity normal
+ * @section Common
+ */
+/*
+ * @nuclide Opacity inactive
+ * @section Common
+ */
+/*
+ * @color Default input border color
+ * @section Colors
+ */
+/*
+ * @color Invalid input border color
+ * @section Colors
+ */
+/*
+ * @nuclide Animation speed (quick)
+ * @section Common
+ */
+/*
+ * @mixin Absolute-top-left
+ * @section Common
+ */
+/*
+ * @mixin Box-sizing: border-box (+ children)
+ * @section Common
+ */
+/*
+ * @mixin Generic browser style spacing reset
+ * @section Common
+ */
+/*
+ * @mixin Reset browser list-style
+ * @section Common
+ */
+/*
+ * @mixin Make element unselectable in modern browsers (+ older chrome/safari)
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element border radius
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element height
+ * @section Common
+ */
+/*
+ * @nuclide standard-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element height
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard icon size
+ * @section Common
+ */
+/*
+ * @nuclide Small icon size
+ * @section Common
+ */
+/*
+ * @nuclide Toggle size
+ * Toggle size
+ */
+/*
+ * @nuclide Default font
+ * @section Fonts
+ */
+/*
+ * @nuclide Default font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Slightly larger font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin top
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin bottom
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 1 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 2 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 3 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 4 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Default heading line-height
+ * @section Fonts
+ */
+/*
+* @nuclide Default line-height
+* @section Fonts
+*/
+/*
+ * @nuclide Default documentation line-height
+ * @section Fonts
+ */
+/*
+ * @color Light gray background
+ * @section Colors
+ */
+/*
+ * @color Gray
+ * @section Colors
+ */
+/**
+ * @molecule Toggle checkbox
+ * @section Form elements > Toggles
+ * @description
+ *  Toggle styling for checkbox
+ * @markup
+ *  <label class="tn-toggle">
+ *    <input class="tn-toggle__checkbox" type="checkbox">
+ *    <span class="tn-toggle__text">Text</span>
+ *  </label>
+ *  <label class="tn-toggle">
+ *    <input class="tn-toggle__checkbox" type="checkbox" checked>
+ *    <span class="tn-toggle__text">Text</span>
+ *  </label>
+ */
+.tn-toggle {
+  -webkit-touch-callout: none;
+  user-select: none;
+  box-sizing: border-box;
+  /* stylelint-disable-next-line selector-max-universal */
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  line-height: 20px; }
+  .tn-toggle > * {
+    box-sizing: border-box; }
+  .tn-toggle__checkbox {
+    display: none; }
+  .tn-toggle__text {
+    padding-right: 5px;
+    padding-left: 41px;
+    font-size: 16px; }
+  .tn-toggle__checkbox + .tn-toggle__text::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    /* stylelint-disable-next-line selector-max-universal */
+    width: 36px;
+    height: 14px;
+    margin: 3px 0;
+    border-radius: 7px;
+    background: #bbb;
+    content: ""; }
+    .tn-toggle__checkbox + .tn-toggle__text::before > * {
+      box-sizing: border-box; }
+  .tn-toggle__checkbox + .tn-toggle__text::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    /* stylelint-disable-next-line selector-max-universal */
+    width: 20px;
+    height: 20px;
+    transition: left 150ms ease;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    content: ""; }
+    .tn-toggle__checkbox + .tn-toggle__text::after > * {
+      box-sizing: border-box; }
+  .tn-toggle__checkbox:checked + .tn-toggle__text::before {
+    background: rgba(0, 122, 206, 0.5); }
+  .tn-toggle__checkbox:checked + .tn-toggle__text::after {
+    left: 16px;
+    background: #007ace; }
+
+/*
+ * @color Brand color
+ * @section Colors
+ */
+/*
+ * @color Muted brand color (50% opacity)
+ * @section Colors
+ */
+/*
+ * @color Base white
+ * @section Colors
+ */
+/*
+ * @color Default font color
+ * @section Colors
+ */
+/*
+ * @color Muted font color
+ * @section Colors
+ */
+/*
+ * @nuclide Opacity normal
+ * @section Common
+ */
+/*
+ * @nuclide Opacity inactive
+ * @section Common
+ */
+/*
+ * @color Default input border color
+ * @section Colors
+ */
+/*
+ * @color Invalid input border color
+ * @section Colors
+ */
+/*
+ * @nuclide Animation speed (quick)
+ * @section Common
+ */
+/*
+ * @mixin Absolute-top-left
+ * @section Common
+ */
+/*
+ * @mixin Box-sizing: border-box (+ children)
+ * @section Common
+ */
+/*
+ * @mixin Generic browser style spacing reset
+ * @section Common
+ */
+/*
+ * @mixin Reset browser list-style
+ * @section Common
+ */
+/*
+ * @mixin Make element unselectable in modern browsers (+ older chrome/safari)
+ * @section Common
+ */
+/**
+ * @atom Basic link
+ * @section Typography
+ * @description
+ *  Standard link styling
+ * @markup
+ *  <a href="#" class="tn-a">This is a link</a>
+ */
+.tn-a,
+.tn-a:link,
+.tn-a:visited {
+  color: #007ace;
+  text-decoration: none; }
+  .tn-a:active, .tn-a:focus, .tn-a:hover,
+  .tn-a:link:active,
+  .tn-a:link:focus,
+  .tn-a:link:hover,
+  .tn-a:visited:active,
+  .tn-a:visited:focus,
+  .tn-a:visited:hover {
+    text-decoration: underline; }
+
+/*
+ * @nuclide Default font
+ * @section Fonts
+ */
+/*
+ * @nuclide Default font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Slightly larger font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin top
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin bottom
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 1 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 2 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 3 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 4 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Default heading line-height
+ * @section Fonts
+ */
+/*
+* @nuclide Default line-height
+* @section Fonts
+*/
+/*
+ * @nuclide Default documentation line-height
+ * @section Fonts
+ */
+/*
+ * @color Light gray background
+ * @section Colors
+ */
+/*
+ * @color Gray
+ * @section Colors
+ */
+/*
+ * @nuclide Standard-element border radius
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element height
+ * @section Common
+ */
+/*
+ * @nuclide standard-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element height
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard icon size
+ * @section Common
+ */
+/*
+ * @nuclide Small icon size
+ * @section Common
+ */
+/*
+ * @nuclide Toggle size
+ * Toggle size
+ */
+/**
+ * Generic paragraph
+ *
+ * @atom Basic paragraph
+ * @section Typography
+ * @markup
+ *  <p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl lorem, dapibus sed convallis quis, sollicitudin accumsan dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum faucibus arcu eget nisi posuere consectetur.</p>
+ */
+.tn-p {
+  margin: 16px 0;
+  color: rgba(0, 0, 0, 0.87);
+  font: 16px arial;
+  line-height: 1.5; }
+
+/*
+ * @nuclide Standard-element border radius
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element height
+ * @section Common
+ */
+/*
+ * @nuclide standard-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element height
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard icon size
+ * @section Common
+ */
+/*
+ * @nuclide Small icon size
+ * @section Common
+ */
+/*
+ * @nuclide Toggle size
+ * Toggle size
+ */
+/*
+ * @nuclide Default font
+ * @section Fonts
+ */
+/*
+ * @nuclide Default font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Slightly larger font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin top
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin bottom
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 1 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 2 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 3 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 4 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Default heading line-height
+ * @section Fonts
+ */
+/*
+* @nuclide Default line-height
+* @section Fonts
+*/
+/*
+ * @nuclide Default documentation line-height
+ * @section Fonts
+ */
+/*
+ * @color Light gray background
+ * @section Colors
+ */
+/*
+ * @color Gray
+ * @section Colors
+ */
+/**
+ * Light gray block with monospaced font used to display code
+ *
+ * @atom Basic code block
+ * @section Typography > Code
+ * @markup
+ *  <pre class="tn-pre"><code>Example code</code></pre>
+ */
+.tn-pre {
+  box-sizing: border-box;
+  /* stylelint-disable-next-line selector-max-universal */
+  padding: 12px;
+  background-color: #f5f5f5;
+  font-family: monospace; }
+  .tn-pre > * {
+    box-sizing: border-box; }
+
+/*
+ * @nuclide Default font
+ * @section Fonts
+ */
+/*
+ * @nuclide Default font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Slightly larger font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin top
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin bottom
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 1 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 2 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 3 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 4 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Default heading line-height
+ * @section Fonts
+ */
+/*
+* @nuclide Default line-height
+* @section Fonts
+*/
+/*
+ * @nuclide Default documentation line-height
+ * @section Fonts
+ */
+/*
+ * @color Light gray background
+ * @section Colors
+ */
+/*
+ * @color Gray
+ * @section Colors
+ */
+/*
+ * @mixin Default code block styling
+ * @section Typography
+ */
+/**
+ * Light gray encapsulation with monospaced font used to display code
+ *
+ * @atom Basic inline code
+ * @section Typography > Code
+ * @markup
+ *  <code class="tn-code">Example code</code>
+ */
+.tn-code {
+  background-color: #f5f5f5;
+  font-family: monospace; }
+
+/*
+ * @nuclide Default font
+ * @section Fonts
+ */
+/*
+ * @nuclide Default font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Slightly larger font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin top
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin bottom
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 1 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 2 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 3 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 4 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Default heading line-height
+ * @section Fonts
+ */
+/*
+* @nuclide Default line-height
+* @section Fonts
+*/
+/*
+ * @nuclide Default documentation line-height
+ * @section Fonts
+ */
+/*
+ * @color Light gray background
+ * @section Colors
+ */
+/*
+ * @color Gray
+ * @section Colors
+ */
+/*
+ * @color Brand color
+ * @section Colors
+ */
+/*
+ * @color Muted brand color (50% opacity)
+ * @section Colors
+ */
+/*
+ * @color Base white
+ * @section Colors
+ */
+/*
+ * @color Default font color
+ * @section Colors
+ */
+/*
+ * @color Muted font color
+ * @section Colors
+ */
+/*
+ * @nuclide Opacity normal
+ * @section Common
+ */
+/*
+ * @nuclide Opacity inactive
+ * @section Common
+ */
+/*
+ * @color Default input border color
+ * @section Colors
+ */
+/*
+ * @color Invalid input border color
+ * @section Colors
+ */
+/*
+ * @nuclide Animation speed (quick)
+ * @section Common
+ */
+/*
+ * @mixin Absolute-top-left
+ * @section Common
+ */
+/*
+ * @mixin Box-sizing: border-box (+ children)
+ * @section Common
+ */
+/*
+ * @mixin Generic browser style spacing reset
+ * @section Common
+ */
+/*
+ * @mixin Reset browser list-style
+ * @section Common
+ */
+/*
+ * @mixin Make element unselectable in modern browsers (+ older chrome/safari)
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element border radius
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element height
+ * @section Common
+ */
+/*
+ * @nuclide standard-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element height
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard icon size
+ * @section Common
+ */
+/*
+ * @nuclide Small icon size
+ * @section Common
+ */
+/*
+ * @nuclide Toggle size
+ * Toggle size
+ */
+/**
+ * Light gray block with an accent for a highlighted paragraph. Best used in tandem with a generic paragraph class.
+ *
+ * @atom Hint
+ * @section Typography
+ * @modifiers
+ *  .tn-hint--brand modifier for brand color accent
+ * @markup
+ *  <h3>Hint variations:</h3>
+ *  <div class="tn-p tn-hint">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl lorem, dapibus sed convallis quis, sollicitudin accumsan dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum faucibus arcu eget nisi posuere consectetur.</div>
+ *  <h3>Hint variations (--brand):</h3>
+ *  <div class="tn-p tn-hint tn-hint--brand">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl lorem, dapibus sed convallis quis, sollicitudin accumsan dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum faucibus arcu eget nisi posuere consectetur.</div>
+ */
+.tn-hint {
+  box-sizing: border-box;
+  /* stylelint-disable-next-line selector-max-universal */
+  padding: 16px;
+  border-left: 2px solid #9b9b9b;
+  background: #f5f5f5; }
+  .tn-hint > * {
+    box-sizing: border-box; }
+  .tn-hint--brand {
+    border-color: #007ace; }
+
+/*
+ * @color Brand color
+ * @section Colors
+ */
+/*
+ * @color Muted brand color (50% opacity)
+ * @section Colors
+ */
+/*
+ * @color Base white
+ * @section Colors
+ */
+/*
+ * @color Default font color
+ * @section Colors
+ */
+/*
+ * @color Muted font color
+ * @section Colors
+ */
+/*
+ * @nuclide Opacity normal
+ * @section Common
+ */
+/*
+ * @nuclide Opacity inactive
+ * @section Common
+ */
+/*
+ * @color Default input border color
+ * @section Colors
+ */
+/*
+ * @color Invalid input border color
+ * @section Colors
+ */
+/*
+ * @nuclide Animation speed (quick)
+ * @section Common
+ */
+/*
+ * @mixin Absolute-top-left
+ * @section Common
+ */
+/*
+ * @mixin Box-sizing: border-box (+ children)
+ * @section Common
+ */
+/*
+ * @mixin Generic browser style spacing reset
+ * @section Common
+ */
+/*
+ * @mixin Reset browser list-style
+ * @section Common
+ */
+/*
+ * @mixin Make element unselectable in modern browsers (+ older chrome/safari)
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element border radius
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element height
+ * @section Common
+ */
+/*
+ * @nuclide standard-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element height
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (bordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Small-element (nonbordered) spacing
+ * @section Common
+ */
+/*
+ * @nuclide Standard icon size
+ * @section Common
+ */
+/*
+ * @nuclide Small icon size
+ * @section Common
+ */
+/*
+ * @nuclide Toggle size
+ * Toggle size
+ */
+/*
+ * @nuclide Default font
+ * @section Fonts
+ */
+/*
+ * @nuclide Default font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Slightly larger font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin top
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin bottom
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 1 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 2 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 3 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 4 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Default heading line-height
+ * @section Fonts
+ */
+/*
+* @nuclide Default line-height
+* @section Fonts
+*/
+/*
+ * @nuclide Default documentation line-height
+ * @section Fonts
+ */
+/*
+ * @color Light gray background
+ * @section Colors
+ */
+/*
+ * @color Gray
+ * @section Colors
+ */
+/*
+ * @nuclide Default font
+ * @section Fonts
+ */
+/*
+ * @nuclide Default font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Slightly larger font-size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin top
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading margin bottom
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 1 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 2 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 3 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Heading 4 size
+ * @section Fonts
+ */
+/*
+ * @nuclide Default heading line-height
+ * @section Fonts
+ */
+/*
+* @nuclide Default line-height
+* @section Fonts
+*/
+/*
+ * @nuclide Default documentation line-height
+ * @section Fonts
+ */
+/*
+ * @color Light gray background
+ * @section Colors
+ */
+/*
+ * @color Gray
+ * @section Colors
+ */
+/**
+ * Heading styles should be applied to h1, h2,... tags.
+ *
+ * @atom Headings
+ * @section Typography
+ * @markup
+ *  <h1 class="tn-h1">Heading .tn-h1</h1>
+ *  <p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl lorem, dapibus sed convallis quis, sollicitudin accumsan dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum faucibus arcu eget nisi posuere consectetur.</p>
+ *  <h2 class="tn-h2">Heading .tn-h2</h2>
+ *  <p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl lorem, dapibus sed convallis quis, sollicitudin accumsan dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum faucibus arcu eget nisi posuere consectetur.</p>
+ *  <h3 class="tn-h3">Heading .tn-h3</h3>
+ *  <p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl lorem, dapibus sed convallis quis, sollicitudin accumsan dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum faucibus arcu eget nisi posuere consectetur.</p>
+ *  <h4 class="tn-h4">Heading .tn-h4</h4>
+ *  <p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl lorem, dapibus sed convallis quis, sollicitudin accumsan dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum faucibus arcu eget nisi posuere consectetur.</p>
+ */
+.tn-h1 {
+  margin-top: 48px;
+  margin-bottom: 12px;
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 1.25; }
+
+.tn-h2 {
+  margin-top: 48px;
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.25; }
+
+.tn-h3 {
+  margin-top: 48px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.25; }
+
+.tn-h4 {
+  margin-top: 48px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.25; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidG4tc3R5bGVndWlkZS5jc3MiLCJzb3VyY2VzIjpbInRuLXN0eWxlZ3VpZGUuc2NzcyIsImVsZW1lbnRzL3RuLW1lZGlhLnNjc3MiLCJlbGVtZW50cy90bi1tZWRpYS1taXhpbnMuc2NzcyIsInR5cG9ncmFwaHkvdG4taGVhZGluZ3MtbWl4aW5zLnNjc3MiLCJfdmFyaWFibGVzL2NvbW1vbi5zY3NzIiwiX3ZhcmlhYmxlcy9zaXplcy5zY3NzIiwiX3ZhcmlhYmxlcy90eXBvZ3JhcGh5LnNjc3MiLCJlbGVtZW50cy90bi10YWJsZS5zY3NzIiwiZWxlbWVudHMvdG4tdGFibGUtbWl4aW5zLnNjc3MiLCJjb2xsZWN0aW9ucy90bi1tZWRpYS1jb2x1bW4uc2NzcyIsImNvbGxlY3Rpb25zL3RuLW1lZGlhLWNvbHVtbi1taXhpbnMuc2NzcyIsImNvbGxlY3Rpb25zL3RuLWJyZWFkY3J1bWJzLnNjc3MiLCJjb2xsZWN0aW9ucy90bi1icmVhZGNydW1icy1taXhpbnMuc2NzcyIsIl92YXJpYWJsZXMvY29sbGVjdGlvbnMuc2NzcyIsImNvbGxlY3Rpb25zL3RuLXN0ZXBzLnNjc3MiLCJjb2xsZWN0aW9ucy90bi1zdGVwcy1taXhpbnMuc2NzcyIsImZvcm0tZWxlbWVudHMvdG4tYnV0dG9uLnNjc3MiLCJmb3JtLWVsZW1lbnRzL3RuLWJ1dHRvbi1taXhpbnMuc2NzcyIsImZvcm0tZWxlbWVudHMvdG4taW5wdXQuc2NzcyIsImZvcm0tZWxlbWVudHMvdG4taW5wdXQtbWl4aW5zLnNjc3MiLCJmb3JtLWVsZW1lbnRzL3RvZ2dsZXMvdG4tY2hlY2tib3guc2NzcyIsImZvcm0tZWxlbWVudHMvdG9nZ2xlcy90bi1jaGVja2JveC1taXhpbnMuc2NzcyIsImZvcm0tZWxlbWVudHMvdG9nZ2xlcy90bi1yYWRpby1idXR0b24uc2NzcyIsImZvcm0tZWxlbWVudHMvdG9nZ2xlcy90bi1yYWRpby1idXR0b24tbWl4aW5zLnNjc3MiLCJmb3JtLWVsZW1lbnRzL3RvZ2dsZXMvdG4tdG9nZ2xlLnNjc3MiLCJmb3JtLWVsZW1lbnRzL3RvZ2dsZXMvdG4tdG9nZ2xlLW1peGlucy5zY3NzIiwidHlwb2dyYXBoeS90bi1hLnNjc3MiLCJ0eXBvZ3JhcGh5L3RuLWEtbWl4aW5zLnNjc3MiLCJ0eXBvZ3JhcGh5L3RuLXAuc2NzcyIsInR5cG9ncmFwaHkvdG4tcC1taXhpbnMuc2NzcyIsInR5cG9ncmFwaHkvdG4tcHJlLnNjc3MiLCJ0eXBvZ3JhcGh5L3RuLXByZS1taXhpbnMuc2NzcyIsInR5cG9ncmFwaHkvdG4tY29kZS5zY3NzIiwidHlwb2dyYXBoeS90bi1jb2RlLW1peGlucy5zY3NzIiwidHlwb2dyYXBoeS90bi1oaW50LnNjc3MiLCJ0eXBvZ3JhcGh5L3RuLWhpbnQtbWl4aW5zLnNjc3MiLCJ0eXBvZ3JhcGh5L3RuLWhlYWRpbmdzLnNjc3MiXSwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBJbmNsdWRlIGNvbXBvbmVudHMgaGVyZSB0byBtYWtlIHRoZW0gYSBwYXJ0IG9mIHN0eWxlZ3VpZGVcbiAqL1xuXG5AaW1wb3J0IFwiZWxlbWVudHMvdG4tbWVkaWFcIjtcbkBpbXBvcnQgXCJlbGVtZW50cy90bi10YWJsZVwiO1xuQGltcG9ydCBcImNvbGxlY3Rpb25zL3RuLW1lZGlhLWNvbHVtblwiO1xuQGltcG9ydCBcImNvbGxlY3Rpb25zL3RuLWJyZWFkY3J1bWJzXCI7XG5AaW1wb3J0IFwiY29sbGVjdGlvbnMvdG4tc3RlcHNcIjtcbkBpbXBvcnQgXCJmb3JtLWVsZW1lbnRzL3RuLWJ1dHRvblwiO1xuQGltcG9ydCBcImZvcm0tZWxlbWVudHMvdG4taW5wdXRcIjtcbkBpbXBvcnQgXCJmb3JtLWVsZW1lbnRzL3RvZ2dsZXMvdG4tY2hlY2tib3hcIjtcbkBpbXBvcnQgXCJmb3JtLWVsZW1lbnRzL3RvZ2dsZXMvdG4tcmFkaW8tYnV0dG9uXCI7XG5AaW1wb3J0IFwiZm9ybS1lbGVtZW50cy90b2dnbGVzL3RuLXRvZ2dsZVwiO1xuQGltcG9ydCBcInR5cG9ncmFwaHkvdG4tYVwiO1xuQGltcG9ydCBcInR5cG9ncmFwaHkvdG4tcFwiO1xuQGltcG9ydCBcInR5cG9ncmFwaHkvdG4tcHJlXCI7XG5AaW1wb3J0IFwidHlwb2dyYXBoeS90bi1jb2RlXCI7XG5AaW1wb3J0IFwidHlwb2dyYXBoeS90bi1oaW50XCI7XG5AaW1wb3J0IFwidHlwb2dyYXBoeS90bi1oZWFkaW5nc1wiO1xuIiwiQGltcG9ydCBcInRuLW1lZGlhLW1peGluc1wiO1xuXG4vKipcbiAqIEBtb2xlY3VsZSBNZWRpYVxuICogQHNlY3Rpb24gRWxlbWVudHNcbiAqIEBkZXNjcmlwdGlvblxuICogIEEgbWVkaWEgZWxlbWVudCB0aGF0IGNvbXByaXNlcyBzZXZlcmFsIGRpZmVyZW50IGNoaWxkIGNsYXNzZXMuIEV4YW1wbGVzIGNhbiBiZSBmb3VuZCBpbiB0aGUgbWVkaWEgY29sdW1uIHN0cnVjdHVyZS5cbiAqIEBtYXJrdXBcbiAqICA8ZGl2IGNsYXNzPVwiU0ctdG9jXCI+XG4gKiAgPHVsPlxuICogICA8bGk+PHN0cm9uZz50bi1tZWRpYTo8L3N0cm9uZz4gbWFpbiBjbGFzc1xuICogICAgIDx1bD5cbiAqICAgICAgIDxsaT48c3Ryb25nPnRuLW1lZGlhX19oZWFkaW5nOjwvc3Ryb25nPiBtZWRpYSBoZWFkaW5nLjwvbGk+XG4gKiAgICAgICA8bGk+PHN0cm9uZz50bi1tZWRpYV9faW1hZ2U6PC9zdHJvbmc+IGFuIGltYWdlIHRoYXQgc3BhbnMgdGhlIHdpZHRoIG9mIHRoZSBtZWRpYSBlbGVtZW50IGFuZCByZXRhaW5zIGl0cyBhc3BlY3QgcmF0aW8uPC9saT5cbiAqICAgICAgIDxsaT48c3Ryb25nPnRuLW1lZGlhX19jYXB0aW9uOjwvc3Ryb25nPiBjZW50ZXJlZCB0ZXh0LjwvbGk+XG4gKiAgICAgICA8bGk+PHN0cm9uZz50bi1tZWRpYV9fY29udGVudDo8L3N0cm9uZz4gZ2VucmFsLXB1cnBvc2UgY29udGFpbmVyIGZvciBhbnkgb3RoZXIgZWxlbWVudC48L2xpPlxuICogICAgICA8L3VsPlxuICogICA8L2xpPlxuICogIDwvdWw+XG4gKiAgPC9kaXY+XG4gKiAgPGRpdiBjbGFzcz1cInRuLW1lZGlhXCI+XG4gKiAgICA8aW1nIGNsYXNzPVwidG4tbWVkaWFfX2ltYWdlXCIgc3JjPVwiLy9wbGFjZWhvbGQuaXQvMTI4MHg3MjBcIiBhbHQ9XCJ0bi1tZWRpYV9faW1hZ2VcIiAvPlxuICogICAgPHAgY2xhc3M9XCJ0bi1tZWRpYV9fY2FwdGlvblwiPlRoZSB0bi1tZWRpYSBlbGVtZW50IGZpbGxzIHRoZSBwYXJlbnQgY29udGFpbmVycyB3aWR0aCBhbmQgc2NhbGVzIGluIGhlaWdodCB0byBmaXQgaXRzIGNvbnRlbnQuPC9wPlxuICogIDwvZGl2PlxuICovXG4udG4tbWVkaWEge1xuICBAaW5jbHVkZSB0bi1tZWRpYTtcblxuICAmX19oZWFkaW5nIHtcbiAgICBAaW5jbHVkZSB0bi1tZWRpYV9faGVhZGluZztcbiAgfVxuXG4gICZfX2ltYWdlIHtcbiAgICBAaW5jbHVkZSB0bi1tZWRpYV9faW1hZ2U7XG4gIH1cblxuICAmX19jYXB0aW9uIHtcbiAgICBAaW5jbHVkZSB0bi1tZWRpYV9fY2FwdGlvbjtcbiAgfVxuXG4gICZfX2NvbnRlbnQge1xuICAgIEBpbmNsdWRlIHRuLW1lZGlhX19jb250ZW50O1xuICB9XG59XG4iLCJAaW1wb3J0IFwiLi4vdHlwb2dyYXBoeS90bi1oZWFkaW5ncy1taXhpbnNcIjtcbkBpbXBvcnQgXCIuLi9fdmFyaWFibGVzL3R5cG9ncmFwaHlcIjtcbkBpbXBvcnQgXCIuLi9fdmFyaWFibGVzL3NpemVzXCI7XG5cbkBtaXhpbiB0bi1tZWRpYSB7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG5AbWl4aW4gdG4tbWVkaWFfX2hlYWRpbmcge1xuICBAaW5jbHVkZSB0bi1oZWFkaW5nKCR0bi1mb250LXNpemUtLWgzKTtcblxuICBtYXJnaW46ICR0bi1zcGFjaW5nLS1zdGFuZGFyZC1lbGVtZW50LW5vbmJvcmRlcmVkIDA7XG59XG5cbkBtaXhpbiB0bi1tZWRpYV9faW1hZ2Uge1xuICBkaXNwbGF5OiBibG9jaztcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogYXV0bztcbn1cblxuQG1peGluIHRuLW1lZGlhX19jYXB0aW9uIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHdpZHRoOiAxMDAlO1xuICBtYXJnaW46ICR0bi1zcGFjaW5nLS1zdGFuZGFyZC1lbGVtZW50LW5vbmJvcmRlcmVkIDA7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuQG1peGluIHRuLW1lZGlhX19jb250ZW50IHtcbiAgd2lkdGg6IDEwMCU7XG59XG4iLCJAaW1wb3J0IFwiLi4vX3ZhcmlhYmxlcy9jb21tb25cIjtcbkBpbXBvcnQgXCIuLi9fdmFyaWFibGVzL3NpemVzXCI7XG5AaW1wb3J0IFwiLi4vX3ZhcmlhYmxlcy90eXBvZ3JhcGh5XCI7XG5cbkBtaXhpbiB0bi1oZWFkaW5nKCRmb250LXNpemUpIHtcbiAgbWFyZ2luLXRvcDogJHRuLXNwYWNpbmctaGVhZGluZy0tdG9wO1xuICBtYXJnaW4tYm90dG9tOiAkdG4tc3BhY2luZy1oZWFkaW5nLS1ib3R0b207XG4gIGZvbnQtc2l6ZTogJGZvbnQtc2l6ZTtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgbGluZS1oZWlnaHQ6ICR0bi1saW5lLWhlaWdodC0taGVhZGluZztcbn1cbiIsIi8qXG4gKiBAY29sb3IgQnJhbmQgY29sb3JcbiAqIEBzZWN0aW9uIENvbG9yc1xuICovXG4kdG4tY29sb3ItLWJyYW5kOiAjMDA3YWNlO1xuXG4vKlxuICogQGNvbG9yIE11dGVkIGJyYW5kIGNvbG9yICg1MCUgb3BhY2l0eSlcbiAqIEBzZWN0aW9uIENvbG9yc1xuICovXG4kdG4tY29sb3ItLWJyYW5kLW11dGVkOiByZ2JhKDAsIDEyMiwgMjA2LCAuNSk7IC8vICMwMDdhY2UsIDUwJSBvcGFjaXR5XG5cbi8qXG4gKiBAY29sb3IgQmFzZSB3aGl0ZVxuICogQHNlY3Rpb24gQ29sb3JzXG4gKi9cbiR0bi1jb2xvci0td2hpdGU6ICNmZmY7XG5cbi8qXG4gKiBAY29sb3IgRGVmYXVsdCBmb250IGNvbG9yXG4gKiBAc2VjdGlvbiBDb2xvcnNcbiAqL1xuJHRuLWNvbG9yLS1kZWZhdWx0OiByZ2JhKDAsIDAsIDAsIC44Nyk7XG5cbi8qXG4gKiBAY29sb3IgTXV0ZWQgZm9udCBjb2xvclxuICogQHNlY3Rpb24gQ29sb3JzXG4gKi9cbiR0bi1jb2xvci0tbXV0ZWQ6IHJnYmEoMCwgMCwgMCwgLjY3KTtcblxuLypcbiAqIEBudWNsaWRlIE9wYWNpdHkgbm9ybWFsXG4gKiBAc2VjdGlvbiBDb21tb25cbiAqL1xuJHRuLW9wYWNpdHktbm9ybWFsOiAxO1xuXG4vKlxuICogQG51Y2xpZGUgT3BhY2l0eSBpbmFjdGl2ZVxuICogQHNlY3Rpb24gQ29tbW9uXG4gKi9cbiR0bi1vcGFjaXR5LWluYWN0aXZlOiAuNTtcblxuLypcbiAqIEBjb2xvciBEZWZhdWx0IGlucHV0IGJvcmRlciBjb2xvclxuICogQHNlY3Rpb24gQ29sb3JzXG4gKi9cbiR0bi1jb2xvci0tZ3JheS1ib3JkZXI6ICNkZGQ7XG5cbi8qXG4gKiBAY29sb3IgSW52YWxpZCBpbnB1dCBib3JkZXIgY29sb3JcbiAqIEBzZWN0aW9uIENvbG9yc1xuICovXG4kdG4tY29sb3ItLXJlZC1pbnZhbGlkOiAjZDMyZjJmO1xuXG4vKlxuICogQG51Y2xpZGUgQW5pbWF0aW9uIHNwZWVkIChxdWljaylcbiAqIEBzZWN0aW9uIENvbW1vblxuICovXG4kdG4tYW5pbWF0aW9uLXNwZWVkLS1xdWljazogMTUwbXM7XG5cbi8qXG4gKiBAbWl4aW4gQWJzb2x1dGUtdG9wLWxlZnRcbiAqIEBzZWN0aW9uIENvbW1vblxuICovXG5AbWl4aW4gdG4tcG9zaXRpb24tYWJzb2x1dGUtdG9wLWxlZnQoKSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBsZWZ0OiAwO1xufVxuXG4vKlxuICogQG1peGluIEJveC1zaXppbmc6IGJvcmRlci1ib3ggKCsgY2hpbGRyZW4pXG4gKiBAc2VjdGlvbiBDb21tb25cbiAqL1xuQG1peGluIHRuLWJvcmRlci1ib3gtZXZlcnl0aGluZygpIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgLyogc3R5bGVsaW50LWRpc2FibGUtbmV4dC1saW5lIHNlbGVjdG9yLW1heC11bml2ZXJzYWwgKi9cbiAgPiAqIHtcbiAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICB9XG59XG5cbi8qXG4gKiBAbWl4aW4gR2VuZXJpYyBicm93c2VyIHN0eWxlIHNwYWNpbmcgcmVzZXRcbiAqIEBzZWN0aW9uIENvbW1vblxuICovXG5AbWl4aW4gdG4tcmVzZXQtc3BhY2luZygpIHtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwO1xufVxuXG4vKlxuICogQG1peGluIFJlc2V0IGJyb3dzZXIgbGlzdC1zdHlsZVxuICogQHNlY3Rpb24gQ29tbW9uXG4gKi9cbkBtaXhpbiB0bi1saXN0LXJlc2V0KCkge1xuICBtYXJnaW46IDA7XG4gIHBhZGRpbmc6IDA7XG4gIGxpc3Qtc3R5bGU6IG5vbmU7XG59XG5cbi8qXG4gKiBAbWl4aW4gTWFrZSBlbGVtZW50IHVuc2VsZWN0YWJsZSBpbiBtb2Rlcm4gYnJvd3NlcnMgKCsgb2xkZXIgY2hyb21lL3NhZmFyaSlcbiAqIEBzZWN0aW9uIENvbW1vblxuICovXG5AbWl4aW4gdG4taW50ZXJhY3Rpb24tLXVuc2VsZXRhYmxlKCkge1xuICAtd2Via2l0LXRvdWNoLWNhbGxvdXQ6IG5vbmU7XG4gIHVzZXItc2VsZWN0OiBub25lO1xufVxuIiwiLypcbiAqIEBudWNsaWRlIFN0YW5kYXJkLWVsZW1lbnQgYm9yZGVyIHJhZGl1c1xuICogQHNlY3Rpb24gQ29tbW9uXG4gKi9cbiR0bi1ib3JkZXItLXN0YW5kYXJkLWVsZW1lbnQtYm9yZGVyLXJhZGl1czogMnB4O1xuXG4vKlxuICogQG51Y2xpZGUgU3RhbmRhcmQtZWxlbWVudCBoZWlnaHRcbiAqIEBzZWN0aW9uIENvbW1vblxuICovXG4kdG4taGVpZ2h0LS1zdGFuZGFyZC1lbGVtZW50OiA1NnB4O1xuXG4vKlxuICogQG51Y2xpZGUgc3RhbmRhcmQtZWxlbWVudCAoYm9yZGVyZWQpIHNwYWNpbmdcbiAqIEBzZWN0aW9uIENvbW1vblxuICovXG4kdG4tc3BhY2luZy0tc3RhbmRhcmQtZWxlbWVudC1ib3JkZXJlZDogMTVweDtcblxuLypcbiAqIEBudWNsaWRlIFN0YW5kYXJkLWVsZW1lbnQgKG5vbmJvcmRlcmVkKSBzcGFjaW5nXG4gKiBAc2VjdGlvbiBDb21tb25cbiAqL1xuJHRuLXNwYWNpbmctLXN0YW5kYXJkLWVsZW1lbnQtbm9uYm9yZGVyZWQ6IDE2cHg7XG5cbi8qXG4gKiBAbnVjbGlkZSBTbWFsbC1lbGVtZW50IGhlaWdodFxuICogQHNlY3Rpb24gQ29tbW9uXG4gKi9cbiR0bi1oZWlnaHQtLXNtYWxsLWVsZW1lbnQ6IDQwcHg7XG5cbi8qXG4gKiBAbnVjbGlkZSBTbWFsbC1lbGVtZW50IChib3JkZXJlZCkgc3BhY2luZ1xuICogQHNlY3Rpb24gQ29tbW9uXG4gKi9cbiR0bi1zcGFjaW5nLS1zbWFsbC1lbGVtZW50LWJvcmRlcmVkOiAxMXB4O1xuXG4vKlxuICogQG51Y2xpZGUgU21hbGwtZWxlbWVudCAobm9uYm9yZGVyZWQpIHNwYWNpbmdcbiAqIEBzZWN0aW9uIENvbW1vblxuICovXG4kdG4tc3BhY2luZy0tc21hbGwtZWxlbWVudC1ub25ib3JkZXJlZDogMTJweDtcblxuLypcbiAqIEBudWNsaWRlIFN0YW5kYXJkIGljb24gc2l6ZVxuICogQHNlY3Rpb24gQ29tbW9uXG4gKi9cbiR0bi1zdGFuZGFyZC1pY29uLXNpemU6IDI0cHg7XG5cbi8qXG4gKiBAbnVjbGlkZSBTbWFsbCBpY29uIHNpemVcbiAqIEBzZWN0aW9uIENvbW1vblxuICovXG4kdG4tc21hbGwtaWNvbi1zaXplOiAxNnB4O1xuXG4vKlxuICogQG51Y2xpZGUgVG9nZ2xlIHNpemVcbiAqIFRvZ2dsZSBzaXplXG4gKi9cbiR0bi1oZWlnaHQtLXRvZ2dsZTogMjBweDtcbiIsIi8qXG4gKiBAbnVjbGlkZSBEZWZhdWx0IGZvbnRcbiAqIEBzZWN0aW9uIEZvbnRzXG4gKi9cbiR0bi1mb250LS1kZWZhdWx0OiAxNnB4IGFyaWFsO1xuXG4vKlxuICogQG51Y2xpZGUgRGVmYXVsdCBmb250LXNpemVcbiAqIEBzZWN0aW9uIEZvbnRzXG4gKi9cbiR0bi1mb250LXNpemUtLWRlZmF1bHQ6IDE2cHg7XG5cbi8qXG4gKiBAbnVjbGlkZSBTbGlnaHRseSBsYXJnZXIgZm9udC1zaXplXG4gKiBAc2VjdGlvbiBGb250c1xuICovXG4kdG4tZm9udC1zaXplLS1sYXJnZTogMThweDtcblxuLypcbiAqIEBudWNsaWRlIEhlYWRpbmcgbWFyZ2luIHRvcFxuICogQHNlY3Rpb24gRm9udHNcbiAqL1xuJHRuLXNwYWNpbmctaGVhZGluZy0tdG9wOiA0OHB4O1xuXG4vKlxuICogQG51Y2xpZGUgSGVhZGluZyBtYXJnaW4gYm90dG9tXG4gKiBAc2VjdGlvbiBGb250c1xuICovXG4kdG4tc3BhY2luZy1oZWFkaW5nLS1ib3R0b206IDEycHg7XG5cbi8qXG4gKiBAbnVjbGlkZSBIZWFkaW5nIDEgc2l6ZVxuICogQHNlY3Rpb24gRm9udHNcbiAqL1xuJHRuLWZvbnQtc2l6ZS0taDE6IDM0cHg7XG5cbi8qXG4gKiBAbnVjbGlkZSBIZWFkaW5nIDIgc2l6ZVxuICogQHNlY3Rpb24gRm9udHNcbiAqL1xuJHRuLWZvbnQtc2l6ZS0taDI6IDI0cHg7XG5cbi8qXG4gKiBAbnVjbGlkZSBIZWFkaW5nIDMgc2l6ZVxuICogQHNlY3Rpb24gRm9udHNcbiAqL1xuJHRuLWZvbnQtc2l6ZS0taDM6IDIwcHg7XG5cbi8qXG4gKiBAbnVjbGlkZSBIZWFkaW5nIDQgc2l6ZVxuICogQHNlY3Rpb24gRm9udHNcbiAqL1xuJHRuLWZvbnQtc2l6ZS0taDQ6IDE2cHg7XG5cbi8qXG4gKiBAbnVjbGlkZSBEZWZhdWx0IGhlYWRpbmcgbGluZS1oZWlnaHRcbiAqIEBzZWN0aW9uIEZvbnRzXG4gKi9cbiR0bi1saW5lLWhlaWdodC0taGVhZGluZzogMS4yNTtcblxuLypcbiogQG51Y2xpZGUgRGVmYXVsdCBsaW5lLWhlaWdodFxuKiBAc2VjdGlvbiBGb250c1xuKi9cbiR0bi1saW5lLWhlaWdodC0tZGVmYXVsdDogMS41O1xuXG4vKlxuICogQG51Y2xpZGUgRGVmYXVsdCBkb2N1bWVudGF0aW9uIGxpbmUtaGVpZ2h0XG4gKiBAc2VjdGlvbiBGb250c1xuICovXG4kdG4tbGluZS1oZWlnaHQtLWRvY3M6IDEuNzU7XG5cbi8qXG4gKiBAY29sb3IgTGlnaHQgZ3JheSBiYWNrZ3JvdW5kXG4gKiBAc2VjdGlvbiBDb2xvcnNcbiAqL1xuJHRuLWNvbG9yLS1saWdodC1ncmF5LWJhY2tncm91bmQ6ICNmNWY1ZjU7XG5cbi8qXG4gKiBAY29sb3IgR3JheVxuICogQHNlY3Rpb24gQ29sb3JzXG4gKi9cbiR0bi1jb2xvci0tZ3JheTogIzliOWI5YjtcbiIsIkBpbXBvcnQgXCJ0bi10YWJsZS1taXhpbnNcIjtcblxuLyoqXG4gKiBAbW9sZWN1bGUgVGFibGVcbiAqIEBzZWN0aW9uIEVsZW1lbnRzXG4gKiBAZGVzY3JpcHRpb25cbiAqICBBIGJhc2ljIHRhYmxlLlxuICogQG1vZGlmaWVyc1xuICogIC50bi10YWJsZS0tYm9yZGVyZWQgbW9kaWZpZXIgZm9yIGEgdGFibGUgd2l0aCBhIHN1cnJvdW5kaW5nIGJvcmRlclxuICogIC50bi10YWJsZS0tc2VwYXJhdG9ycyBtb2RpZmllciBmb3IgYm9yZGVycyBiZXR3ZWVuIGVhY2ggY29sdW1uXG4gKiAgLnRuLXRhYmxlLS1hY2NlbnRlZCBtb2RpZmllciB0byBhY2NlbnQgdGhlIHRhYmxlIGhlYWRlclxuICogIC50bi10YWJsZS0tYWNjZW50ZWQtLWJyYW5kIG1vZGlmaWVyIHRvIGFjY2VudCB0aGUgdGFibGUgaGVhZGVyIHdpdGggdGhlIGJyYW5kIGNvbG9yXG4gKiAgLnRuLXRhYmxlX19jZWxsLS1jZW50ZXJlZCBtb2RpZmllciB0byBhbGlnbiB0ZXh0IGluIHRoZSBjZW50ZXIgb2YgYSBjZWxsICh0ZCBvciB0aClcbiAqIEBtYXJrdXBcbiAqICA8aDM+U2VsZWN0ZWQgbW9iaWxlIFRlY2hub2xvZ2llczwvaDM+XG4gKiAgPHRhYmxlIGNsYXNzPVwidG4tdGFibGVcIj5cbiAqICAgIDx0aGVhZCBjbGFzcz1cInRuLXRoZWFkXCI+XG4gKiAgICAgIDx0ciBjbGFzcz1cInRuLXRyXCI+XG4gKiAgICAgICAgPHRoIGNsYXNzPVwidG4tdGhcIj5HZW5lcmF0aW9uPC90aCBjbGFzcz1cInRuLXRoXCI+XG4gKiAgICAgICAgPHRoIGNsYXNzPVwidG4tdGhcIj5UZWNobm9sb2d5PC90aCBjbGFzcz1cInRuLXRoXCI+XG4gKiAgICAgIDwvdHIgY2xhc3M9XCJ0bi10clwiPlxuICogICAgPC90aGVhZD5cbiAqICAgIDx0Ym9keSBjbGFzcz1cInRuLXRib2R5XCI+XG4gKiAgICAgIDx0ciBjbGFzcz1cInRuLXRyXCI+XG4gKiAgICAgICAgPHRkIGNsYXNzPVwidG4tdGRcIj4xRzwvdGQgY2xhc3M9XCJ0bi10ZFwiPlxuICogICAgICAgIDx0ZCBjbGFzcz1cInRuLXRkXCI+Tk1UPC90ZCBjbGFzcz1cInRuLXRkXCI+XG4gKiAgICAgIDwvdHIgY2xhc3M9XCJ0bi10clwiPlxuICogICAgICA8dHIgY2xhc3M9XCJ0bi10clwiPlxuICogICAgICAgIDx0ZCBjbGFzcz1cInRuLXRkXCI+Mkc8L3RkIGNsYXNzPVwidG4tdGRcIj5cbiAqICAgICAgICA8dGQgY2xhc3M9XCJ0bi10ZFwiPkdTTTwvdGQgY2xhc3M9XCJ0bi10ZFwiPlxuICogICAgICA8L3RyIGNsYXNzPVwidG4tdHJcIj5cbiAqICAgICAgPHRyIGNsYXNzPVwidG4tdHJcIj5cbiAqICAgICAgICA8dGQgY2xhc3M9XCJ0bi10ZFwiPjJHIHRyYW5zaXRpb25hbDwvdGQgY2xhc3M9XCJ0bi10ZFwiPlxuICogICAgICAgIDx0ZCBjbGFzcz1cInRuLXRkXCI+R1BSUywgRURHRTwvdGQgY2xhc3M9XCJ0bi10ZFwiPlxuICogICAgICA8L3RyIGNsYXNzPVwidG4tdHJcIj5cbiAqICAgICAgPHRyIGNsYXNzPVwidG4tdHJcIj5cbiAqICAgICAgICA8dGQgY2xhc3M9XCJ0bi10ZFwiPjNHPC90ZCBjbGFzcz1cInRuLXRkXCI+XG4gKiAgICAgICAgPHRkIGNsYXNzPVwidG4tdGRcIj5VTVRTPC90ZCBjbGFzcz1cInRuLXRkXCI+XG4gKiAgICAgIDwvdHIgY2xhc3M9XCJ0bi10clwiPlxuICogICAgICA8dHIgY2xhc3M9XCJ0bi10clwiPlxuICogICAgICAgIDx0ZCBjbGFzcz1cInRuLXRkXCI+M0cgdHJhbnNpdGlvbmFsPC90ZCBjbGFzcz1cInRuLXRkXCI+XG4gKiAgICAgICAgPHRkIGNsYXNzPVwidG4tdGRcIj5IU1BBLCBIU1BBKywgTFRFPC90ZCBjbGFzcz1cInRuLXRkXCI+XG4gKiAgICAgIDwvdHIgY2xhc3M9XCJ0bi10clwiPlxuICogICAgICA8dHIgY2xhc3M9XCJ0bi10clwiPlxuICogICAgICAgIDx0ZCBjbGFzcz1cInRuLXRkXCI+NEc8L3RkIGNsYXNzPVwidG4tdGRcIj5cbiAqICAgICAgICA8dGQgY2xhc3M9XCJ0bi10ZFwiPkxURSBBZHZhbmNlZDwvdGQgY2xhc3M9XCJ0bi10ZFwiPlxuICogICAgICA8L3RyIGNsYXNzPVwidG4tdHJcIj5cbiAqICAgIDwvdGJvZHkgY2xhc3M9XCJ0bi10Ym9keVwiPlxuICogIDwvdGFibGU+XG4gKiAgPGgzPlBheW1lbnQgbWV0aG9kcyAoLS1ib3JkZXJlZCAtLXNlcGFyYXRvcnMgLS1hY2NlbnRlZC0tYnJhbmQpPC9oMz5cbiAqICA8dGFibGUgY2xhc3M9XCJ0bi10YWJsZSB0bi10YWJsZS0tYm9yZGVyZWQgdG4tdGFibGUtLXNlcGFyYXRvcnMgdG4tdGFibGUtLWFjY2VudGVkLS1icmFuZFwiPlxuICogICAgPHRoZWFkIGNsYXNzPVwidG4tdGhlYWRcIj5cbiAqICAgICAgPHRyIGNsYXNzPVwidG4tdHJcIj5cbiAqICAgICAgICA8dGggY2xhc3M9XCJ0bi10aFwiIHJvd3NwYW49XCIyXCI+Q291bnRyeTwvdGggY2xhc3M9XCJ0bi10aFwiPlxuICogICAgICAgIDx0aCBjbGFzcz1cInRuLXRoIHRuLXRhYmxlX19jZWxsLS1jZW50ZXJlZFwiIGNvbHNwYW49XCIyXCI+R0xPQkFMIFNPTFVUSU9OUzwvdGggY2xhc3M9XCJ0bi10aFwiPlxuICogICAgICAgIDx0aCBjbGFzcz1cInRuLXRoIHRuLXRhYmxlX19jZWxsLS1jZW50ZXJlZFwiIGNvbHNwYW49XCIzXCI+TU9CSUxFIFdBTExFVFM8L3RoIGNsYXNzPVwidG4tdGhcIj5cbiAqICAgICAgPC90ciBjbGFzcz1cInRuLXRyXCI+XG4gKiAgICAgIDx0ciBjbGFzcz1cInRuLXRyXCI+XG4gKiAgICAgICAgPHRoIGNsYXNzPVwidG4tdGhcIj5ET0I8L3RoIGNsYXNzPVwidG4tdGhcIj5cbiAqICAgICAgICA8dGggY2xhc3M9XCJ0bi10aFwiPkNhcmRzPC90aCBjbGFzcz1cInRuLXRoXCI+XG4gKiAgICAgICAgPHRoIGNsYXNzPVwidG4tdGhcIj5WaXBwczwvdGggY2xhc3M9XCJ0bi10aFwiPlxuICogICAgICAgIDx0aCBjbGFzcz1cInRuLXRoXCI+RWFzeXBheXNpYTwvdGggY2xhc3M9XCJ0bi10aFwiPlxuICogICAgICAgIDx0aCBjbGFzcz1cInRuLXRoXCI+TXlDbGVhcjwvdGggY2xhc3M9XCJ0bi10aFwiPlxuICogICAgICA8L3RyIGNsYXNzPVwidG4tdHJcIj5cbiAqICAgIDwvdGggY2xhc3M9XCJ0bi10aFwiZWFkIGNsYXNzPVwidG4tdGggY2xhc3M9XCJ0bi10aFwiZWFkXCI+XG4gKiAgICA8dGJvZHkgY2xhc3M9XCJ0bi10Ym9keVwiPlxuICogICAgICA8dHIgY2xhc3M9XCJ0bi10clwiPlxuICogICAgICAgIDx0aCBjbGFzcz1cInRuLXRoXCI+QmFuZ2xhZGVzaDwvdGggY2xhc3M9XCJ0bi10aFwiPlxuICogICAgICAgIDx0ZCBjbGFzcz1cInRuLXRkIHRuLXRhYmxlX19jZWxsLS1jZW50ZXJlZFwiPiYjeDI3MTM7PC90ZCBjbGFzcz1cInRuLXRkXCI+XG4gKiAgICAgICAgPHRkIGNsYXNzPVwidG4tdGQgdG4tdGFibGVfX2NlbGwtLWNlbnRlcmVkXCI+JiN4MjcxMzs8L3RkIGNsYXNzPVwidG4tdGRcIj5cbiAqICAgICAgICA8dGQgY2xhc3M9XCJ0bi10ZCB0bi10YWJsZV9fY2VsbC0tY2VudGVyZWRcIj48L3RkIGNsYXNzPVwidG4tdGRcIj5cbiAqICAgICAgICA8dGQgY2xhc3M9XCJ0bi10ZCB0bi10YWJsZV9fY2VsbC0tY2VudGVyZWRcIj4mI3gyNzEzOzwvdGQgY2xhc3M9XCJ0bi10ZFwiPlxuICogICAgICAgIDx0ZCBjbGFzcz1cInRuLXRkIHRuLXRhYmxlX19jZWxsLS1jZW50ZXJlZFwiPjwvdGQgY2xhc3M9XCJ0bi10ZFwiPlxuICogICAgICA8L3RyIGNsYXNzPVwidG4tdHJcIj5cbiAqICAgICAgPHRyIGNsYXNzPVwidG4tdHJcIj5cbiAqICAgICAgICA8dGggY2xhc3M9XCJ0bi10aFwiPk1hbGF5c2lhPC90aCBjbGFzcz1cInRuLXRoXCI+XG4gKiAgICAgICAgPHRkIGNsYXNzPVwidG4tdGQgdG4tdGFibGVfX2NlbGwtLWNlbnRlcmVkXCI+JiN4MjcxMzs8L3RkIGNsYXNzPVwidG4tdGRcIj5cbiAqICAgICAgICA8dGQgY2xhc3M9XCJ0bi10ZCB0bi10YWJsZV9fY2VsbC0tY2VudGVyZWRcIj4mI3gyNzEzOzwvdGQgY2xhc3M9XCJ0bi10ZFwiPlxuICogICAgICAgIDx0ZCBjbGFzcz1cInRuLXRkIHRuLXRhYmxlX19jZWxsLS1jZW50ZXJlZFwiPjwvdGQgY2xhc3M9XCJ0bi10ZFwiPlxuICogICAgICAgIDx0ZCBjbGFzcz1cInRuLXRkIHRuLXRhYmxlX19jZWxsLS1jZW50ZXJlZFwiPjwvdGQgY2xhc3M9XCJ0bi10ZFwiPlxuICogICAgICAgIDx0ZCBjbGFzcz1cInRuLXRkIHRuLXRhYmxlX19jZWxsLS1jZW50ZXJlZFwiPiYjeDI3MTM7PC90ZCBjbGFzcz1cInRuLXRkXCI+XG4gKiAgICAgIDwvdHIgY2xhc3M9XCJ0bi10clwiPlxuICogICAgICA8dHIgY2xhc3M9XCJ0bi10clwiPlxuICogICAgICAgIDx0aCBjbGFzcz1cInRuLXRoXCI+Tm9yd2F5PC90aCBjbGFzcz1cInRuLXRoXCI+XG4gKiAgICAgICAgPHRkIGNsYXNzPVwidG4tdGQgdG4tdGFibGVfX2NlbGwtLWNlbnRlcmVkXCI+JiN4MjcxMzs8L3RkIGNsYXNzPVwidG4tdGRcIj5cbiAqICAgICAgICA8dGQgY2xhc3M9XCJ0bi10ZCB0bi10YWJsZV9fY2VsbC0tY2VudGVyZWRcIj4mI3gyNzEzOzwvdGQgY2xhc3M9XCJ0bi10ZFwiPlxuICogICAgICAgIDx0ZCBjbGFzcz1cInRuLXRkIHRuLXRhYmxlX19jZWxsLS1jZW50ZXJlZFwiPiYjeDI3MTM7PC90ZCBjbGFzcz1cInRuLXRkXCI+XG4gKiAgICAgICAgPHRkIGNsYXNzPVwidG4tdGQgdG4tdGFibGVfX2NlbGwtLWNlbnRlcmVkXCI+PC90ZCBjbGFzcz1cInRuLXRkXCI+XG4gKiAgICAgICAgPHRkIGNsYXNzPVwidG4tdGQgdG4tdGFibGVfX2NlbGwtLWNlbnRlcmVkXCI+PC90ZCBjbGFzcz1cInRuLXRkXCI+XG4gKiAgICAgIDwvdHIgY2xhc3M9XCJ0bi10clwiPlxuICogICAgICA8dHIgY2xhc3M9XCJ0bi10clwiPlxuICogICAgICAgIDx0aCBjbGFzcz1cInRuLXRoXCI+VGhhaWxhbmQ8L3RoIGNsYXNzPVwidG4tdGhcIj5cbiAqICAgICAgICA8dGQgY2xhc3M9XCJ0bi10ZCB0bi10YWJsZV9fY2VsbC0tY2VudGVyZWRcIj4mI3gyNzEzOzwvdGQgY2xhc3M9XCJ0bi10ZFwiPlxuICogICAgICAgIDx0ZCBjbGFzcz1cInRuLXRkIHRuLXRhYmxlX19jZWxsLS1jZW50ZXJlZFwiPiYjeDI3MTM7PC90ZCBjbGFzcz1cInRuLXRkXCI+XG4gKiAgICAgICAgPHRkIGNsYXNzPVwidG4tdGQgdG4tdGFibGVfX2NlbGwtLWNlbnRlcmVkXCI+PC90ZCBjbGFzcz1cInRuLXRkXCI+XG4gKiAgICAgICAgPHRkIGNsYXNzPVwidG4tdGQgdG4tdGFibGVfX2NlbGwtLWNlbnRlcmVkXCI+PC90ZCBjbGFzcz1cInRuLXRkXCI+XG4gKiAgICAgICAgPHRkIGNsYXNzPVwidG4tdGQgdG4tdGFibGVfX2NlbGwtLWNlbnRlcmVkXCI+JiN4MjcxMzs8L3RkIGNsYXNzPVwidG4tdGRcIj5cbiAqICAgICAgPC90ciBjbGFzcz1cInRuLXRyXCI+XG4gKiAgICA8L3Rib2R5IGNsYXNzPVwidG4tdGJvZHlcIj5cbiAqICA8L3RhYmxlPlxuICovXG4udG4tdGFibGUge1xuICBAaW5jbHVkZSB0bi10YWJsZTtcblxuICAudG4tdGgge1xuICAgIEBpbmNsdWRlIHRuLXRoO1xuICAgIEBpbmNsdWRlIHRuLXRhYmxlX19jZWxsO1xuICB9XG5cbiAgLnRuLXRkIHtcbiAgICBAaW5jbHVkZSB0bi10YWJsZV9fY2VsbDtcbiAgfVxuXG4gIC50bi10aGVhZCAudG4tdGFibGVfX2NlbGwtLWNlbnRlcmVkLFxuICAudG4tdGJvZHkgLnRuLXRhYmxlX19jZWxsLS1jZW50ZXJlZCB7XG4gICAgQGluY2x1ZGUgdG4tdGFibGVfX2NlbGwtLWNlbnRlcmVkO1xuICB9XG5cbiAgLnRuLXRyICsgLnRuLXRyID4gLnRuLXRkLFxuICAudG4tdHIgKyAudG4tdHIgPiAudG4tdGgge1xuICAgIEBpbmNsdWRlIHRuLXRhYmxlX19jZWxsLS1ib3JkZXItdG9wO1xuICB9XG5cbiAgLnRuLXRoZWFkIC50bi10ciA+IC50bi10ZCxcbiAgLnRuLXRoZWFkIC50bi10ciA+IC50bi10aCB7XG4gICAgQGluY2x1ZGUgdG4tdGFibGVfX2NlbGwtLWJvcmRlci1ib3R0b207XG4gIH1cblxuICAmLS1zZXBhcmF0b3JzIHtcbiAgICAudG4tdGgsXG4gICAgLnRuLXRkIHtcbiAgICAgIEBpbmNsdWRlIHRuLXRhYmxlX19jZWxsLS1zZXBhcmF0b3JzO1xuICAgIH1cblxuICAgIC50bi10ciA+IC50bi10aDpsYXN0LWNoaWxkLFxuICAgIC50bi10ciA+IC50bi10ZDpsYXN0LWNoaWxkIHtcbiAgICAgIEBpbmNsdWRlIHRuLXRhYmxlX19jZWxsLS1uby1ib3JkZXItcmlnaHQ7XG4gICAgfVxuICB9XG5cbiAgJi0tYm9yZGVyZWQge1xuICAgIEBpbmNsdWRlIHRuLXRhYmxlLS1ib3JkZXJlZDtcbiAgfVxuXG4gICYtLWFjY2VudGVkIHtcbiAgICAudG4tdGhlYWQgLnRuLXRyIHtcbiAgICAgIEBpbmNsdWRlIHRuLXRhYmxlX19yb3ctLWFjY2VudGVkO1xuICAgIH1cbiAgfVxuXG4gICYtLWFjY2VudGVkLS1icmFuZCB7XG4gICAgLnRuLXRoZWFkIC50bi10ciB7XG4gICAgICBAaW5jbHVkZSB0bi10YWJsZV9fcm93LS1hY2NlbnRlZC0tYnJhbmQ7XG4gICAgfVxuICB9XG59XG4iLCJAaW1wb3J0IFwiLi4vX3ZhcmlhYmxlcy9jb21tb25cIjtcbkBpbXBvcnQgXCIuLi9fdmFyaWFibGVzL3NpemVzXCI7XG5AaW1wb3J0IFwiLi4vX3ZhcmlhYmxlcy90eXBvZ3JhcGh5XCI7XG5cbkBtaXhpbiB0bi10YWJsZSgpIHtcbiAgd2lkdGg6IDEwMCU7XG4gIG1heC13aWR0aDogMTAwJTtcbiAgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTtcbn1cblxuQG1peGluIHRuLXRhYmxlLS1ib3JkZXJlZCgpIHtcbiAgYm9yZGVyOiAxcHggc29saWQgJHRuLWNvbG9yLS1ncmF5LWJvcmRlcjtcbn1cblxuQG1peGluIHRuLXRoKCkge1xuICBjb2xvcjogJHRuLWNvbG9yLS1tdXRlZDtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgdmVydGljYWwtYWxpZ246IGJvdHRvbTtcbn1cblxuQG1peGluIHRuLXRhYmxlX19jZWxsKCkge1xuICBwYWRkaW5nOiAkdG4tc3BhY2luZy0tc21hbGwtZWxlbWVudC1ub25ib3JkZXJlZDtcbiAgdGV4dC1hbGlnbjogbGVmdDtcbn1cblxuQG1peGluIHRuLXRhYmxlX19jZWxsLS1ib3JkZXItdG9wKCkge1xuICBib3JkZXItdG9wOiAxcHggc29saWQgJHRuLWNvbG9yLS1ncmF5LWJvcmRlcjtcbn1cblxuQG1peGluIHRuLXRhYmxlX19jZWxsLS1ib3JkZXItYm90dG9tKCkge1xuICBib3JkZXItYm90dG9tOiAxcHggc29saWQgJHRuLWNvbG9yLS1ncmF5LWJvcmRlcjtcbn1cblxuQG1peGluIHRuLXRhYmxlX19jZWxsLS1jZW50ZXJlZCgpIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5AbWl4aW4gdG4tdGFibGVfX2NlbGwtLXNlcGFyYXRvcnMoKSB7XG4gIGJvcmRlci1yaWdodDogMXB4IHNvbGlkICR0bi1jb2xvci0tZ3JheS1ib3JkZXI7XG59XG5cbkBtaXhpbiB0bi10YWJsZV9fY2VsbC0tbm8tYm9yZGVyLXJpZ2h0KCkge1xuICBib3JkZXItcmlnaHQ6IG5vbmU7XG59XG5cbkBtaXhpbiB0bi10YWJsZV9fcm93LS1hY2NlbnRlZCgpIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogJHRuLWNvbG9yLS1saWdodC1ncmF5LWJhY2tncm91bmQ7XG59XG5cbkBtaXhpbiB0bi10YWJsZV9fcm93LS1hY2NlbnRlZC0tYnJhbmQoKSB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoJHRuLWNvbG9yLS1icmFuZCwgLjA1KTtcbn1cbiIsIkBpbXBvcnQgXCJ0bi1tZWRpYS1jb2x1bW4tbWl4aW5zXCI7XG5cbi8qKlxuICogQHN0cnVjdHVyZSBNZWRpYSBjb2x1bW5cbiAqIEBzZWN0aW9uIENvbGxlY3Rpb25zXG4gKiBAZGVzY3JpcHRpb25cbiAqICBBIGNvbHVtbiBvZiBldmVubHkgc2l6ZWQgbWVkaWEgZWxlbWVudHMuXG4gKiBAbWFya3VwXG4gKiAgPGgyIGNsYXNzPVwidG4taDJcIj5Ud28gaW1hZ2VzIHdpdGggY2FwdGlvbnM8L2gyPlxuICogIDxkaXYgY2xhc3M9XCJ0bi1tZWRpYS1jb2x1bW5cIj5cbiAqICAgIDxkaXYgY2xhc3M9XCJ0bi1tZWRpYVwiPlxuICogICAgICA8aW1nIGNsYXNzPVwidG4tbWVkaWFfX2ltYWdlXCIgc3JjPVwiLy9wbGFjZWhvbGQuaXQvMTI4MHg3MjBcIiBhbHQ9XCJ0bi1tZWRpYV9faW1hZ2VcIiAvPlxuICogICAgICA8cCBjbGFzcz1cInRuLW1lZGlhX19jYXB0aW9uXCI+TWVkaWEgY2FwdGlvbi48L3A+XG4gKiAgICA8L2Rpdj5cbiAqICAgIDxkaXYgY2xhc3M9XCJ0bi1tZWRpYVwiPlxuICogICAgICA8aW1nIGNsYXNzPVwidG4tbWVkaWFfX2ltYWdlXCIgc3JjPVwiLy9wbGFjZWhvbGQuaXQvMTI4MHg3MjBcIiBhbHQ9XCJ0bi1tZWRpYV9faW1hZ2VcIiAvPlxuICogICAgICA8cCBjbGFzcz1cInRuLW1lZGlhX19jYXB0aW9uXCI+UGxhY2Vob2xkZXIgaW1hZ2UuPC9wPlxuICogICAgPC9kaXY+XG4gKiAgPC9kaXY+XG4gKiAgPGgyIGNsYXNzPVwidG4taDJcIj5JbWFnZSBhbmQgdGV4dDwvaDI+XG4gKiAgPGRpdiBjbGFzcz1cInRuLW1lZGlhLWNvbHVtblwiPlxuICogICAgPGRpdiBjbGFzcz1cInRuLW1lZGlhXCI+XG4gKiAgICAgIDxoMyBjbGFzcz1cInRuLW1lZGlhX19oZWFkaW5nXCI+TG9yZW0gaXBzdW08L2gzPlxuICogICAgICA8ZGl2IGNsYXNzPVwidG4tbWVkaWFfX2NvbnRlbnRcIj48cCBjbGFzcz1cInRuLXBcIj5Mb3JlbSBpcHN1bSBkb2xvciBzaXQgYW1ldCwgY29uc2VjdGV0dXIgYWRpcGlzY2luZyBlbGl0LiBOYW0gcHJldGl1bSB0cmlzdGlxdWUgZXguIE5hbSBlZ2V0IGFyY3Ugc2l0IGFtZXQgbmlzaSBwb3J0dGl0b3IgYWNjdW1zYW4uIE51bmMgZ3JhdmlkYSBjb21tb2RvIHRvcnRvciwgaWQgaW50ZXJkdW0gZXN0IGludGVyZHVtIHZpdmVycmEuIE51bGxhIGluIHZlaGljdWxhIG51bmMuIENyYXMgYWMgZXJvcyBpZCBuaWJoIGxhb3JlZXQgY29uZ3VlLiBDcmFzIGV0IHZhcml1cyBtYXVyaXMuIE51bGxhIGV4IGVuaW0sIGRhcGlidXMgbmVjIHRlbXBvciBzZWQsIGVsZWlmZW5kIGV0IHNhcGllbi4gT3JjaSB2YXJpdXMgbmF0b3F1ZSBwZW5hdGlidXMgZXQgbWFnbmlzIGRpcyBwYXJ0dXJpZW50IG1vbnRlcywgbmFzY2V0dXIgcmlkaWN1bHVzIG11cy48L3A+PC9kaXY+XG4gKiAgICA8L2Rpdj5cbiAqICAgIDxkaXYgY2xhc3M9XCJ0bi1tZWRpYVwiPlxuICogICAgICA8aW1nIGNsYXNzPVwidG4tbWVkaWFfX2ltYWdlXCIgc3JjPVwiLy9wbGFjZWhvbGQuaXQvMTAyNHgxMDI0XCIgYWx0PVwidG4tbWVkaWFfX2ltYWdlXCIgLz5cbiAqICAgIDwvZGl2PlxuICogIDwvZGl2PlxuICogIDxoMiBjbGFzcz1cInRuLWgyXCI+VmFyaWV0eSBjb2x1bW48L2gyPlxuICogIDxkaXYgY2xhc3M9XCJ0bi1tZWRpYS1jb2x1bW5cIj5cbiAqICAgIDxkaXYgY2xhc3M9XCJ0bi1tZWRpYVwiPlxuICogICAgICA8aW1nIGNsYXNzPVwidG4tbWVkaWFfX2ltYWdlXCIgc3JjPVwiLy9wbGFjZWhvbGQuaXQvMTI4MHg3MjBcIiBhbHQ9XCJ0bi1tZWRpYV9faW1hZ2VcIiAvPlxuICogICAgPC9kaXY+XG4qICAgIDxkaXYgY2xhc3M9XCJ0bi1tZWRpYVwiPlxuICogICAgICA8aW1nIGNsYXNzPVwidG4tbWVkaWFfX2ltYWdlXCIgc3JjPVwiLy9wbGFjZWhvbGQuaXQvMTI4MHg3MjBcIiBhbHQ9XCJ0bi1tZWRpYV9faW1hZ2VcIiAvPlxuICogICAgICA8cCBjbGFzcz1cInRuLW1lZGlhX19jYXB0aW9uXCI+TWVkaWEgY2FwdGlvbi48L3A+XG4gKiAgICA8L2Rpdj5cbiAqICAgIDxkaXYgY2xhc3M9XCJ0bi1tZWRpYVwiPlxuICogICAgICA8aDMgY2xhc3M9XCJ0bi1tZWRpYV9faGVhZGluZ1wiPkxvcmVtIGlwc3VtPC9wPlxuICogICAgICA8ZGl2IGNsYXNzPVwidG4tbWVkaWFfX2NvbnRlbnRcIj48cCBjbGFzcz1cInRuLXBcIj5Mb3JlbSBpcHN1bSBkb2xvciBzaXQgYW1ldCwgY29uc2VjdGV0dXIgYWRpcGlzY2luZyBlbGl0LiBOYW0gcHJldGl1bSB0cmlzdGlxdWUgZXguIE5hbSBlZ2V0IGFyY3Ugc2l0IGFtZXQgbmlzaSBwb3J0dGl0b3IgYWNjdW1zYW4uPC9wPjwvZGl2PlxuICogICAgPC9kaXY+XG4gKiAgICA8ZGl2IGNsYXNzPVwidG4tbWVkaWFcIj5cbiAqICAgICAgPGltZyBjbGFzcz1cInRuLW1lZGlhX19pbWFnZVwiIHNyYz1cIi8vcGxhY2Vob2xkLml0LzEyODB4NzIwXCIgYWx0PVwidG4tbWVkaWFfX2ltYWdlXCIgLz5cbiAqICAgICAgPGRpdiBjbGFzcz1cInRuLW1lZGlhX19jb250ZW50XCI+PHAgY2xhc3M9XCJ0bi1wXCI+TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4gTmFtIHByZXRpdW0gdHJpc3RpcXVlIGV4LiBOYW0gZWdldCBhcmN1IHNpdCBhbWV0IG5pc2kgcG9ydHRpdG9yIGFjY3Vtc2FuLiA8L3A+PC9kaXY+XG4gKiAgICA8L2Rpdj5cbiAqICAgIDxkaXYgY2xhc3M9XCJ0bi1tZWRpYVwiPlxuICogICAgICA8aW1nIGNsYXNzPVwidG4tbWVkaWFfX2ltYWdlXCIgc3JjPVwiLy9wbGFjZWhvbGQuaXQvMTI4MHg3MjBcIiBhbHQ9XCJ0bi1tZWRpYV9faW1hZ2VcIiAvPlxuICogICAgICA8aDMgY2xhc3M9XCJ0bi1tZWRpYV9faGVhZGluZ1wiPkxvcmVtIGlwc3VtPC9oMz5cbiAqICAgICAgPGRpdiBjbGFzcz1cInRuLW1lZGlhX19jb250ZW50XCI+PHAgY2xhc3M9XCJ0bi1wXCI+TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4gTmFtIHByZXRpdW0gdHJpc3RpcXVlIGV4LiBOYW0gZWdldCBhcmN1IHNpdCBhbWV0IG5pc2kgcG9ydHRpdG9yIGFjY3Vtc2FuLiA8L3A+PC9kaXY+XG4gKiAgICA8L2Rpdj5cbiAqICA8L2Rpdj5cbiAqL1xuLnRuLW1lZGlhLWNvbHVtbiB7XG4gIEBpbmNsdWRlIHRuLW1lZGlhLWNvbHVtbjtcbn1cbiIsIkBpbXBvcnQgXCIuLi9fdmFyaWFibGVzL3NpemVzXCI7XG5cbkBtaXhpbiB0bi1tZWRpYS1jb2x1bW4oKSB7XG4gIGRpc3BsYXk6IGZsZXg7XG5cbiAgLnRuLW1lZGlhICsgLnRuLW1lZGlhIHtcbiAgICBtYXJnaW4tbGVmdDogJHRuLXNwYWNpbmctLXN0YW5kYXJkLWVsZW1lbnQtbm9uYm9yZGVyZWQ7XG4gIH1cbn1cbiIsIkBpbXBvcnQgXCJ0bi1icmVhZGNydW1icy1taXhpbnNcIjtcbkBpbXBvcnQgXCIuLi9fdmFyaWFibGVzL2NvbW1vblwiO1xuXG4vKipcbiAqIEJyZWFkY3J1bWJzIHRvIGluZGljYXRlIHRoZSB1c2VyJ3MgY3VycmVudCBwb3NpdGlvbiBpbiBhIGhpZXJhcmNoaWNhbCBzdHJ1Y3R1cmVcbiAqXG4gKiBAbW9sZWN1bGUgQnJlYWRjcnVtYnNcbiAqIEBzZWN0aW9uIENvbGxlY3Rpb25zXG4gKiBAbWFya3VwXG4gKiAgPG9sIGNsYXNzPVwidG4tYnJlYWRjcnVtYnNcIj5cbiAqICAgPGxpIGNsYXNzPVwidG4tYnJlYWRjcnVtYlwiPjxhIGhyZWY9XCIjXCIgY2xhc3M9XCJ0bi1hXCI+SG9tZTwvYT48L2xpPlxuICogICA8bGkgY2xhc3M9XCJ0bi1icmVhZGNydW1iXCI+PGEgaHJlZj1cIiNcIiBjbGFzcz1cInRuLWFcIj5Tb21ld2hlcmU8L2E+PC9saT5cbiAqICAgPGxpIGNsYXNzPVwidG4tYnJlYWRjcnVtYlwiPkN1cnJlbnQgcGFnZTwvbGk+XG4gKiAgPC9vbD5cbiAqL1xuLnRuLWJyZWFkY3J1bWJzIHtcbiAgQGluY2x1ZGUgdG4tbGlzdC1yZXNldDtcblxuICAudG4tYnJlYWRjcnVtYiB7XG4gICAgQGluY2x1ZGUgdG4tYm9yZGVyLWJveC1ldmVyeXRoaW5nO1xuICAgIEBpbmNsdWRlIHRuLWJyZWFkY3J1bWI7XG4gIH1cbn1cbiIsIkBpbXBvcnQgXCIuLi9fdmFyaWFibGVzL2NvbW1vblwiO1xuQGltcG9ydCBcIi4uL192YXJpYWJsZXMvY29sbGVjdGlvbnNcIjtcblxuQG1peGluIHRuLWJyZWFkY3J1bWIoKSB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcblxuICAmOm5vdCg6Zmlyc3QtY2hpbGQpOjpiZWZvcmUge1xuICAgIHBhZGRpbmc6IDAgJHRuLWNvbGxlY3Rpb25zLXNwYWNpbmctLXN0YW5kYXJkLWVsZW1lbnQ7XG4gICAgY29sb3I6ICR0bi1jb2xvci0tZGVmYXVsdDtcbiAgICBjb250ZW50OiBcIi9cIjtcbiAgfVxufVxuIiwiLypcbiAqIEBudWNsaWRlIFN0YW5kYXJkIHNwYWNpbmcgZm9yIGVsZW1lbnRzIGluIGNvbGxlY3Rpb25zXG4gKiBAc2VjdGlvbiBDb21tb25cbiAqL1xuJHRuLWNvbGxlY3Rpb25zLXNwYWNpbmctLXN0YW5kYXJkLWVsZW1lbnQ6IDZweDtcbiIsIkBpbXBvcnQgXCJ0bi1zdGVwcy1taXhpbnNcIjtcblxuLyoqXG4gKiBAbW9sZWN1bGUgU3RlcHNcbiAqIEBzZWN0aW9uIENvbGxlY3Rpb25zXG4gKiBAZGVzY3JpcHRpb25cbiAqICBPdmVydmlldyBvZiB0aGUgc3RlcHMgb2YgYSBwcm9jZXNzLiBUaGUgYWN0aXZlIGVsZW1lbnQgaXMgbWFya2VkIGJ5IGEgQkVNIG1vZGlmaWVyLlxuICAqIEBtb2RpZmllcnNcbiAqICAudG4tc3RlcHMtLXNtYWxsIG1vZGlmaWVyIGZvciBzbWFsbGVyIHN0ZXBzXG4gKiBAbWFya3VwXG4gKiAgPGgzPlN0ZXBzIHZhcmlhdGlvbnM6PC9oMz5cbiAqICA8b2wgY2xhc3M9XCJ0bi1zdGVwc1wiPlxuICogICA8bGkgY2xhc3M9XCJ0bi1zdGVwIHRuLXN0ZXAtLWFjdGl2ZVwiPkNyZWF0ZSBUcmFuc2FjdGlvbjwvbGk+XG4gKiAgIDxsaSBjbGFzcz1cInRuLXN0ZXBcIj5QYXltZW50PC9saT5cbiAqICAgPGxpIGNsYXNzPVwidG4tc3RlcFwiPlZlcmlmeSBUcmFuc2FjdGlvbjwvbGk+XG4gKiAgPC9vbD5cbiAqICA8aDM+U3RlcHMgdmFyaWF0aW9ucyAoLS1zbWFsbCk6PC9oMz5cbiAqICA8b2wgY2xhc3M9XCJ0bi1zdGVwcyB0bi1zdGVwcy0tc21hbGxcIj5cbiAqICAgPGxpIGNsYXNzPVwidG4tc3RlcCB0bi1zdGVwLS1hY3RpdmVcIj5DcmVhdGUgVHJhbnNhY3Rpb248L2xpPlxuICogICA8bGkgY2xhc3M9XCJ0bi1zdGVwXCI+UGF5bWVudDwvbGk+XG4gKiAgIDxsaSBjbGFzcz1cInRuLXN0ZXBcIj5WZXJpZnkgVHJhbnNhY3Rpb248L2xpPlxuICogIDwvb2w+XG4gKi9cbi50bi1zdGVwcyB7XG4gIEBpbmNsdWRlIHRuLWxpc3QtcmVzZXQ7XG4gIEBpbmNsdWRlIHRuLXN0ZXBzO1xuXG4gICYtLXNtYWxsIHtcbiAgICBAaW5jbHVkZSB0bi1zdGVwcy0tc21hbGw7XG4gIH1cbn1cblxuLnRuLXN0ZXAge1xuICBAaW5jbHVkZSB0bi1ib3JkZXItYm94LWV2ZXJ5dGhpbmc7XG4gIEBpbmNsdWRlIHRuLWxpc3QtcmVzZXQ7XG4gIEBpbmNsdWRlIHRuLXN0ZXA7XG5cbiAgJi0tYWN0aXZlIHtcbiAgICBAaW5jbHVkZSB0bi1zdGVwLS1hY3RpdmU7XG4gIH1cbn1cbiIsIkBpbXBvcnQgXCIuLi9fdmFyaWFibGVzL2NvbW1vblwiO1xuQGltcG9ydCBcIi4uL192YXJpYWJsZXMvdHlwb2dyYXBoeVwiO1xuQGltcG9ydCBcIi4uL192YXJpYWJsZXMvc2l6ZXNcIjtcblxuQG1peGluIHRuLXN0ZXBzKCkge1xuICBjb3VudGVyLXJlc2V0OiBzdGVwO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LXdyYXA6IHdyYXA7XG4gIHBhZGRpbmc6ICR0bi1zcGFjaW5nLS1zdGFuZGFyZC1lbGVtZW50LW5vbmJvcmRlcmVkIDA7XG59XG5cbkBtaXhpbiB0bi1zdGVwcy0tc21hbGwoKSB7XG4gIHBhZGRpbmc6ICR0bi1zcGFjaW5nLS1zbWFsbC1lbGVtZW50LW5vbmJvcmRlcmVkIDA7XG5cbiAgLnRuLXN0ZXAge1xuICAgIGhlaWdodDogJHRuLWhlaWdodC0tc21hbGwtZWxlbWVudDtcbiAgICBtYXJnaW46IDAgJHRuLWhlaWdodC0tc21hbGwtZWxlbWVudCAkdG4tc3BhY2luZy0tc21hbGwtZWxlbWVudC1ub25ib3JkZXJlZCAwO1xuICAgIGZvbnQtc2l6ZTogJHRuLWZvbnQtc2l6ZS0tZGVmYXVsdDtcbiAgICBsaW5lLWhlaWdodDogJHRuLWZvbnQtc2l6ZS0tZGVmYXVsdDtcblxuICAgICY6OmJlZm9yZSB7XG4gICAgICB3aWR0aDogJHRuLWhlaWdodC0tc21hbGwtZWxlbWVudDtcbiAgICAgIGhlaWdodDogJHRuLWhlaWdodC0tc21hbGwtZWxlbWVudDtcbiAgICAgIG1hcmdpbi1yaWdodDogJHRuLXNwYWNpbmctLXNtYWxsLWVsZW1lbnQtbm9uYm9yZGVyZWQ7XG4gICAgICBsaW5lLWhlaWdodDogJHRuLWhlaWdodC0tc21hbGwtZWxlbWVudDtcbiAgICB9XG4gIH1cbn1cblxuQG1peGluIHRuLXN0ZXAoKSB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgaGVpZ2h0OiAkdG4taGVpZ2h0LS1zdGFuZGFyZC1lbGVtZW50O1xuICBtYXJnaW46IDAgJHRuLWhlaWdodC0tc3RhbmRhcmQtZWxlbWVudCAkdG4tc3BhY2luZy0tc3RhbmRhcmQtZWxlbWVudC1ub25ib3JkZXJlZCAwO1xuICBjb2xvcjogJHRuLWNvbG9yLS1kZWZhdWx0O1xuICBmb250LXNpemU6ICR0bi1mb250LXNpemUtLWxhcmdlO1xuICBsaW5lLWhlaWdodDogJHRuLWhlaWdodC0tc3RhbmRhcmQtZWxlbWVudDtcbiAgb3BhY2l0eTogJHRuLW9wYWNpdHktaW5hY3RpdmU7XG5cbiAgJjo6YmVmb3JlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgY291bnRlci1pbmNyZW1lbnQ6IHN0ZXA7XG4gICAgd2lkdGg6ICR0bi1oZWlnaHQtLXN0YW5kYXJkLWVsZW1lbnQ7XG4gICAgaGVpZ2h0OiAkdG4taGVpZ2h0LS1zdGFuZGFyZC1lbGVtZW50O1xuICAgIG1hcmdpbi1yaWdodDogJHRuLXNwYWNpbmctLXN0YW5kYXJkLWVsZW1lbnQtbm9uYm9yZGVyZWQ7XG4gICAgYm9yZGVyLXJhZGl1czogNTAlO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICR0bi1jb2xvci0tZGVmYXVsdDtcbiAgICBjb2xvcjogJHRuLWNvbG9yLS13aGl0ZTtcbiAgICBsaW5lLWhlaWdodDogJHRuLWhlaWdodC0tc3RhbmRhcmQtZWxlbWVudDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgY29udGVudDogY291bnRlcihzdGVwKTtcbiAgfVxufVxuXG5AbWl4aW4gdG4tc3RlcC0tYWN0aXZlKCkge1xuICBjb2xvcjogJHRuLWNvbG9yLS1kZWZhdWx0O1xuICBvcGFjaXR5OiAkdG4tb3BhY2l0eS1ub3JtYWw7XG5cbiAgJjo6YmVmb3JlIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAkdG4tY29sb3ItLWJyYW5kO1xuICB9XG59XG4iLCJAaW1wb3J0IFwidG4tYnV0dG9uLW1peGluc1wiO1xuXG4vKipcbiAqIEBhdG9tIEJhc2ljIGJ1dHRvblxuICogQHNlY3Rpb24gRm9ybSBlbGVtZW50c1xuICogQGRlc2NyaXB0aW9uXG4gKiAgU3RhbmRhcmQgYnV0dG9uIHN0eWxpbmcgZm9yIGFjdGlvbiBidXR0b25zXG4gKiBAbW9kaWZpZXJzXG4gKiAgLnRuLWJ1dHRvbi0tc21hbGwgbW9kaWZpZXIgZm9yIHNtYWxsZXIgYnV0dG9uc1xuICogIC50bi1idXR0b24tLWRpc2FibGVkIG1vZGlmaWVyIGZvciBkaXNhYmxlZCBidXR0b25zXG4gKiBAbWFya3VwXG4gKiAgPGgzPkJ1dHRvbiB2YXJpYXRpb25zOjwvaDM+XG4gKiAgPGJ1dHRvbiBjbGFzcz1cInRuLWJ1dHRvblwiPkFjdGlvbiBidXR0b248L2J1dHRvbj5cbiAqICA8YnV0dG9uIGNsYXNzPVwidG4tYnV0dG9uIHRuLWJ1dHRvbi0tZGlzYWJsZWRcIj5EaXNhYmxlZCBidXR0b248L2J1dHRvbj5cbiAqICA8aDM+QnV0dG9uIHZhcmlhdGlvbnMgKC0tc21hbGwpOjwvaDM+XG4gKiAgPGJ1dHRvbiBjbGFzcz1cInRuLWJ1dHRvbiB0bi1idXR0b24tLXNtYWxsXCI+U21hbGwgYnV0dG9uPC9idXR0b24+XG4gKiAgPGJ1dHRvbiBjbGFzcz1cInRuLWJ1dHRvbiB0bi1idXR0b24tLXNtYWxsIHRuLWJ1dHRvbi0tZGlzYWJsZWRcIj5TbWFsbCBkaXNhYmxlZCBidXR0b248L2J1dHRvbj5cbiAqL1xuLnRuLWJ1dHRvbiB7XG4gIEBpbmNsdWRlIHRuLWludGVyYWN0aW9uLS11bnNlbGV0YWJsZTtcbiAgQGluY2x1ZGUgdG4tYm9yZGVyLWJveC1ldmVyeXRoaW5nO1xuICBAaW5jbHVkZSB0bi1idXR0b247XG5cbiAgJi0tc21hbGwge1xuICAgIEBpbmNsdWRlIHRuLWJ1dHRvbi0tc21hbGw7XG4gIH1cblxuICAmLS1kaXNhYmxlZCB7XG4gICAgQGluY2x1ZGUgdG4tYnV0dG9uLS1kaXNhYmxlZDtcbiAgfVxufVxuIiwiQGltcG9ydCBcIi4uL192YXJpYWJsZXMvc2l6ZXNcIjtcbkBpbXBvcnQgXCIuLi9fdmFyaWFibGVzL2NvbW1vblwiO1xuQGltcG9ydCBcIi4uL192YXJpYWJsZXMvdHlwb2dyYXBoeVwiO1xuXG5AbWl4aW4gdG4tYnV0dG9uKCkge1xuICBwYWRkaW5nOiAwICR0bi1zcGFjaW5nLS1zdGFuZGFyZC1lbGVtZW50LW5vbmJvcmRlcmVkO1xuICB0cmFuc2l0aW9uOiBvcGFjaXR5IC4ycyBlYXNlLWluLW91dDtcbiAgYm9yZGVyOiAwO1xuICBib3JkZXItcmFkaXVzOiAkdG4tYm9yZGVyLS1zdGFuZGFyZC1lbGVtZW50LWJvcmRlci1yYWRpdXM7XG4gIGJhY2tncm91bmQ6ICR0bi1jb2xvci0tYnJhbmQ7XG4gIGNvbG9yOiAkdG4tY29sb3ItLXdoaXRlO1xuICBmb250LXNpemU6ICR0bi1mb250LXNpemUtLWxhcmdlO1xuICBsaW5lLWhlaWdodDogJHRuLWhlaWdodC0tc3RhbmRhcmQtZWxlbWVudDtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG5AbWl4aW4gdG4tYnV0dG9uLS1zbWFsbCgpIHtcbiAgcGFkZGluZzogMCAkdG4tc3BhY2luZy0tc21hbGwtZWxlbWVudC1ub25ib3JkZXJlZDtcbiAgZm9udC1zaXplOiAkdG4tZm9udC1zaXplLS1kZWZhdWx0O1xuICBsaW5lLWhlaWdodDogJHRuLWhlaWdodC0tc21hbGwtZWxlbWVudDtcbn1cblxuQG1peGluIHRuLWJ1dHRvbi0tZGlzYWJsZWQoKSB7XG4gIG9wYWNpdHk6ICR0bi1vcGFjaXR5LWluYWN0aXZlO1xufVxuIiwiQGltcG9ydCBcInRuLWlucHV0LW1peGluc1wiO1xuXG4vKipcbiAqIEBhdG9tIEJhc2ljIGlucHV0LWZpZWxkXG4gKiBAc2VjdGlvbiBGb3JtIGVsZW1lbnRzID4gSW5wdXQgZmllbGRzXG4gKiBAZGVzY3JpcHRpb25cbiAqICBTdGFuZGFyZCBpbnB1dCBzdHlsaW5nIGZvciB0ZXh0L2VtYWlsL3Bob25lLCBldGNcbiAqIEBtb2RpZmllcnNcbiAqICAudG4taW5wdXQtLXNtYWxsIG1vZGlmaWVyIGZvciBzbWFsbGVyIGlucHV0c1xuICogIC50bi1pbnB1dC0taW52YWxpZCBtb2RpZmllciBmb3Igd2hlbiBpbnB1dCB2YWx1ZSBpcyBpbnZhbGlkXG4gKiBAbWFya3VwXG4gKiAgPGgzPklucHV0IHZhcmlhdGlvbnM6PC9oMz5cbiAqICA8aW5wdXQgY2xhc3M9XCJ0bi1pbnB1dFwiIHBsYWNlaG9sZGVyPVwiUGxhY2Vob2xkZXIgLi4uXCI+XG4gKiAgPGlucHV0IGNsYXNzPVwidG4taW5wdXRcIiB2YWx1ZT1cInZhbHVlXCI+XG4gKiAgPGlucHV0IGNsYXNzPVwidG4taW5wdXQgdG4taW5wdXQtLWludmFsaWRcIiB2YWx1ZT1cImludmFsaWQtdmFsdWVcIj5cbiAqICA8aDM+SW5wdXQgdmFyaWF0aW9ucyAoLS1zbWFsbCk6PC9oMz5cbiAqICA8aW5wdXQgY2xhc3M9XCJ0bi1pbnB1dCB0bi1pbnB1dC0tc21hbGxcIiBwbGFjZWhvbGRlcj1cIlBsYWNlaG9sZGVyIC4uLlwiPlxuICogIDxpbnB1dCBjbGFzcz1cInRuLWlucHV0IHRuLWlucHV0LS1zbWFsbFwiIHZhbHVlPVwidmFsdWVcIj5cbiAqICA8aW5wdXQgY2xhc3M9XCJ0bi1pbnB1dCB0bi1pbnB1dC0tc21hbGwgdG4taW5wdXQtLWludmFsaWRcIiB2YWx1ZT1cImludmFsaWQtdmFsdWVcIj5cbiAqL1xuLnRuLWlucHV0IHtcbiAgQGluY2x1ZGUgdG4tYm9yZGVyLWJveC1ldmVyeXRoaW5nO1xuICBAaW5jbHVkZSB0bi1pbnB1dDtcblxuICAmLS1zbWFsbCB7XG4gICAgQGluY2x1ZGUgdG4taW5wdXQtLXNtYWxsO1xuICB9XG5cbiAgJi0taW52YWxpZCB7XG4gICAgQGluY2x1ZGUgdG4taW5wdXQtLWludmFsaWQ7XG4gIH1cbn1cblxuLyoqXG4gKiBAbW9sZWN1bGUgSW5wdXQtZmllbGQgd2l0aCBpY29uXG4gKiBAc2VjdGlvbiBGb3JtIGVsZW1lbnRzID4gSW5wdXQgZmllbGRzXG4gKiBAZGVzY3JpcHRpb25cbiAqICBTdGFuZGFyZCBpbnB1dCBzdHlsaW5nIGZvciB0ZXh0L2VtYWlsL3Bob25lLCBldGNcbiAqIEBtb2RpZmllcnNcbiAqICAudG4taW5wdXR3cmFwLS1zbWFsbCBtb2RpZmllciBmb3Igc21hbGxlciBpbnB1dHNcbiAqICAudG4taW5wdXR3cmFwLS1oYXMtdmFsdWUgbW9kaWZpZXIgZm9yIHdoZW4gY2hpbGQgaW5wdXQgaGFzIHZhbHVlIChjaGFuZ2VzIGljb24gb3BhY2l0eSBmcm9tIC41IHRvIDEpXG4gKiBAbWFya3VwXG4gKiAgPGgzPkljb24taW5wdXQgdmFyaWF0aW9uczo8L2gzPlxuICogIDxkaXYgY2xhc3M9XCJ0bi1pbnB1dHdyYXBcIj5cbiAqICAgICAgPGRpdiBjbGFzcz1cInRuLWlucHV0d3JhcF9faWNvblwiPlxuICogICAgICAgICAgPHN2ZyB3aWR0aD1cIjI0XCIgaGVpZ2h0PVwiMjRcIj48Y2lyY2xlIGN4PVwiMTJcIiBjeT1cIjEyXCIgcj1cIjEyXCIgZmlsbD1cIiMzMzNcIi8+PC9zdmc+XG4gKiAgICAgIDwvZGl2PlxuICogICAgICA8aW5wdXQgY2xhc3M9XCJ0bi1pbnB1dHdyYXBfX2lucHV0XCIgcGxhY2Vob2xkZXI9XCJQbGFjZWhvbGRlciAuLi5cIj5cbiAqICA8L2Rpdj5cbiAqICA8YnI+XG4gKiAgPGRpdiBjbGFzcz1cInRuLWlucHV0d3JhcCB0bi1pbnB1dHdyYXAtLWhhcy12YWx1ZVwiPlxuICogICAgICA8ZGl2IGNsYXNzPVwidG4taW5wdXR3cmFwX19pY29uXCI+XG4gKiAgICAgICAgICA8c3ZnIHdpZHRoPVwiMjRcIiBoZWlnaHQ9XCIyNFwiPjxjaXJjbGUgY3g9XCIxMlwiIGN5PVwiMTJcIiByPVwiMTJcIiBmaWxsPVwiIzMzM1wiLz48L3N2Zz5cbiAqICAgICAgPC9kaXY+XG4gKiAgICAgIDxpbnB1dCBjbGFzcz1cInRuLWlucHV0d3JhcF9faW5wdXRcIiB2YWx1ZT1cInZhbHVlXCI+XG4gKiAgPC9kaXY+XG4gKiAgPGJyPlxuICogIDxoMz5JY29uLWlucHV0IHZhcmlhdGlvbnMgKC0tc21hbGwpOjwvaDM+XG4gKiAgPGRpdiBjbGFzcz1cInRuLWlucHV0d3JhcCB0bi1pbnB1dHdyYXAtLXNtYWxsXCI+XG4gKiAgICAgIDxkaXYgY2xhc3M9XCJ0bi1pbnB1dHdyYXBfX2ljb25cIj5cbiAqICAgICAgICAgIDxzdmcgd2lkdGg9XCIxNlwiIGhlaWdodD1cIjE2XCI+PGNpcmNsZSBjeD1cIjhcIiBjeT1cIjhcIiByPVwiOFwiIGZpbGw9XCIjMzMzXCIvPjwvc3ZnPlxuICogICAgICA8L2Rpdj5cbiAqICAgICAgPGlucHV0IGNsYXNzPVwidG4taW5wdXR3cmFwX19pbnB1dFwiIHBsYWNlaG9sZGVyPVwiUGxhY2Vob2xkZXIgLi4uXCI+XG4gKiAgPC9kaXY+XG4gKiAgPGJyPlxuICogIDxkaXYgY2xhc3M9XCJ0bi1pbnB1dHdyYXAgdG4taW5wdXR3cmFwLS1zbWFsbCB0bi1pbnB1dHdyYXAtLWhhcy12YWx1ZVwiPlxuICogICAgICA8ZGl2IGNsYXNzPVwidG4taW5wdXR3cmFwX19pY29uXCI+XG4gKiAgICAgICAgICA8c3ZnIHdpZHRoPVwiMTZcIiBoZWlnaHQ9XCIxNlwiPjxjaXJjbGUgY3g9XCI4XCIgY3k9XCI4XCIgcj1cIjhcIiBmaWxsPVwiIzMzM1wiLz48L3N2Zz5cbiAqICAgICAgPC9kaXY+XG4gKiAgICAgIDxpbnB1dCBjbGFzcz1cInRuLWlucHV0d3JhcF9faW5wdXRcIiB2YWx1ZT1cInZhbHVlXCI+XG4gKiAgPC9kaXY+XG4gKi9cbi50bi1pbnB1dHdyYXAge1xuICBAaW5jbHVkZSB0bi1ib3JkZXItYm94LWV2ZXJ5dGhpbmc7XG4gIEBpbmNsdWRlIHRuLWlucHV0d3JhcDtcblxuICAmX19pY29uIHtcbiAgICBAaW5jbHVkZSB0bi1pbnB1dHdyYXBfX2ljb247XG4gICAgQGluY2x1ZGUgdG4taW5wdXR3cmFwX19pY29uLS1pbmFjdGl2ZTsgLy8gaW5hY3RpdmUgYnkgZGVmYXVsdFxuICB9XG5cbiAgJl9faW5wdXQge1xuICAgIEBpbmNsdWRlIHRuLWlucHV0d3JhcF9faW5wdXQ7XG4gIH1cblxuICAmLS1oYXMtdmFsdWUge1xuICAgIC50bi1pbnB1dHdyYXBfX2ljb24ge1xuICAgICAgQGluY2x1ZGUgdG4taW5wdXR3cmFwX19pY29uLS1hY3RpdmU7IC8vIGFjdGl2ZSBpZiBpbnB1dCBoYXMgdmFsdWVcbiAgICB9XG4gIH1cblxuICAmLS1zbWFsbCB7XG4gICAgQGluY2x1ZGUgdG4taW5wdXR3cmFwLS1zbWFsbDtcblxuICAgIC50bi1pbnB1dHdyYXBfX2ljb24ge1xuICAgICAgQGluY2x1ZGUgdG4taW5wdXR3cmFwX19pY29uLS1zbWFsbDtcbiAgICB9XG5cbiAgICAudG4taW5wdXR3cmFwX19pbnB1dCB7XG4gICAgICBAaW5jbHVkZSB0bi1pbnB1dHdyYXBfX2lucHV0LS1zbWFsbDtcbiAgICB9XG4gIH1cbn1cbiIsIkBpbXBvcnQgXCIuLi9fdmFyaWFibGVzL2NvbW1vblwiO1xuQGltcG9ydCBcIi4uL192YXJpYWJsZXMvc2l6ZXNcIjtcbkBpbXBvcnQgXCIuLi9fdmFyaWFibGVzL3R5cG9ncmFwaHlcIjtcblxuLy8gQmFzaWMgaW5wdXRcblxuQG1peGluIHRuLWlucHV0KCkge1xuICBoZWlnaHQ6ICR0bi1oZWlnaHQtLXN0YW5kYXJkLWVsZW1lbnQ7XG4gIHBhZGRpbmc6IDAgJHRuLXNwYWNpbmctLXN0YW5kYXJkLWVsZW1lbnQtYm9yZGVyZWQ7XG4gIGJvcmRlcjogMXB4IHNvbGlkICR0bi1jb2xvci0tZ3JheS1ib3JkZXI7XG4gIGJvcmRlci1yYWRpdXM6ICR0bi1ib3JkZXItLXN0YW5kYXJkLWVsZW1lbnQtYm9yZGVyLXJhZGl1cztcbiAgZm9udDogJHRuLWZvbnQtLWRlZmF1bHQ7XG59XG5cbkBtaXhpbiB0bi1pbnB1dC0taW52YWxpZCgpIHtcbiAgYm9yZGVyLWNvbG9yOiAkdG4tY29sb3ItLXJlZC1pbnZhbGlkO1xuICBjb2xvcjogJHRuLWNvbG9yLS1yZWQtaW52YWxpZDtcbn1cblxuQG1peGluIHRuLWlucHV0LS1zbWFsbCgpIHtcbiAgaGVpZ2h0OiAkdG4taGVpZ2h0LS1zbWFsbC1lbGVtZW50O1xuICBwYWRkaW5nOiAwICR0bi1zcGFjaW5nLS1zbWFsbC1lbGVtZW50LWJvcmRlcmVkO1xufVxuXG4vLyBJY29uIGlucHV0XG5cbkBtaXhpbiB0bi1pbnB1dHdyYXAoKSB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgaGVpZ2h0OiAkdG4taGVpZ2h0LS1zdGFuZGFyZC1lbGVtZW50O1xufVxuXG5AbWl4aW4gdG4taW5wdXR3cmFwLS1zbWFsbCgpIHtcbiAgaGVpZ2h0OiAkdG4taGVpZ2h0LS1zbWFsbC1lbGVtZW50O1xufVxuXG5AbWl4aW4gdG4taW5wdXR3cmFwX19pY29uKCkge1xuICBAaW5jbHVkZSB0bi1wb3NpdGlvbi1hYnNvbHV0ZS10b3AtbGVmdDtcblxuICB3aWR0aDogJHRuLXN0YW5kYXJkLWljb24tc2l6ZTtcbiAgaGVpZ2h0OiAkdG4tc3RhbmRhcmQtaWNvbi1zaXplO1xuICBtYXJnaW46ICR0bi1zcGFjaW5nLS1zdGFuZGFyZC1lbGVtZW50LW5vbmJvcmRlcmVkO1xuICB6LWluZGV4OiAxO1xufVxuXG5AbWl4aW4gdG4taW5wdXR3cmFwX19pY29uLS1zbWFsbCgpIHtcbiAgd2lkdGg6ICR0bi1zbWFsbC1pY29uLXNpemU7XG4gIGhlaWdodDogJHRuLXNtYWxsLWljb24tc2l6ZTtcbiAgbWFyZ2luOiAkdG4tc3BhY2luZy0tc21hbGwtZWxlbWVudC1ub25ib3JkZXJlZDtcbn1cblxuQG1peGluIHRuLWlucHV0d3JhcF9faWNvbi0taW5hY3RpdmUoKSB7XG4gIG9wYWNpdHk6ICR0bi1vcGFjaXR5LWluYWN0aXZlO1xufVxuXG5AbWl4aW4gdG4taW5wdXR3cmFwX19pY29uLS1hY3RpdmUoKSB7XG4gIG9wYWNpdHk6ICR0bi1vcGFjaXR5LW5vcm1hbDtcbn1cblxuQG1peGluIHRuLWlucHV0d3JhcF9faW5wdXQoKSB7XG4gIEBpbmNsdWRlIHRuLWlucHV0O1xuICBAaW5jbHVkZSB0bi1wb3NpdGlvbi1hYnNvbHV0ZS10b3AtbGVmdDtcblxuICBwYWRkaW5nLWxlZnQ6ICR0bi1zdGFuZGFyZC1pY29uLXNpemUgKyAyICogJHRuLXNwYWNpbmctLXN0YW5kYXJkLWVsZW1lbnQtbm9uYm9yZGVyZWQ7XG59XG5cbkBtaXhpbiB0bi1pbnB1dHdyYXBfX2lucHV0LS1zbWFsbCgpIHtcbiAgaGVpZ2h0OiAkdG4taGVpZ2h0LS1zbWFsbC1lbGVtZW50O1xuICBwYWRkaW5nLWxlZnQ6ICR0bi1zbWFsbC1pY29uLXNpemUgKyAyICogJHRuLXNwYWNpbmctLXNtYWxsLWVsZW1lbnQtbm9uYm9yZGVyZWQ7XG4gIGxpbmUtaGVpZ2h0OiAkdG4taGVpZ2h0LS1zbWFsbC1lbGVtZW50O1xufVxuIiwiQGltcG9ydCBcInRuLWNoZWNrYm94LW1peGluc1wiO1xuXG4vKipcbiAqIEBtb2xlY3VsZSBTdGFuZGFyZCBjaGVja2JveFxuICogQHNlY3Rpb24gRm9ybSBlbGVtZW50cyA+IFRvZ2dsZXNcbiAqIEBkZXNjcmlwdGlvblxuICogIFN0YW5kYXJkIHN0eWxpbmcgZm9yIGNoZWNrYm94ZXNcbiAqIEBtYXJrdXBcbiAqICA8bGFiZWwgY2xhc3M9XCJ0bi1jaGVja2JveHdyYXBcIj5cbiAqICAgIDxpbnB1dCBjbGFzcz1cInRuLWNoZWNrYm94d3JhcF9fY2hlY2tib3hcIiB0eXBlPVwiY2hlY2tib3hcIj5cbiAqICAgIDxzcGFuIGNsYXNzPVwidG4tY2hlY2tib3h3cmFwX190ZXh0XCI+VGV4dDwvc3Bhbj5cbiAqICA8L2xhYmVsPlxuICogIDxsYWJlbCBjbGFzcz1cInRuLWNoZWNrYm94d3JhcFwiPlxuICogICAgPGlucHV0IGNsYXNzPVwidG4tY2hlY2tib3h3cmFwX19jaGVja2JveFwiIHR5cGU9XCJjaGVja2JveFwiIGNoZWNrZWQ+XG4gKiAgICA8c3BhbiBjbGFzcz1cInRuLWNoZWNrYm94d3JhcF9fdGV4dFwiPlRleHQ8L3NwYW4+XG4gKiAgPC9sYWJlbD5cbiAqL1xuLnRuLWNoZWNrYm94d3JhcCB7XG4gIEBpbmNsdWRlIHRuLWludGVyYWN0aW9uLS11bnNlbGV0YWJsZTtcbiAgQGluY2x1ZGUgdG4tY2hlY2tib3h3cmFwO1xuXG4gICZfX2NoZWNrYm94IHtcbiAgICBAaW5jbHVkZSB0bi1jaGVja2JveHdyYXBfX2NoZWNrYm94O1xuICB9XG5cbiAgJl9fdGV4dCB7XG4gICAgQGluY2x1ZGUgdG4tY2hlY2tib3h3cmFwX190ZXh0O1xuICB9XG5cbiAgJl9fY2hlY2tib3ggKyAmX190ZXh0OjpiZWZvcmUge1xuICAgIEBpbmNsdWRlIHRuLWNoZWNrYm94d3JhcF9fcHNldWRvLWNoZWNrYm94O1xuICB9XG5cbiAgJl9fY2hlY2tib3g6Y2hlY2tlZCArICZfX3RleHQ6OmJlZm9yZSB7XG4gICAgQGluY2x1ZGUgdG4tY2hlY2tib3h3cmFwX19wc2V1ZG8tY2hlY2tib3gtLWNoZWNrZWQtYmc7XG4gIH1cblxuICAmX19jaGVja2JveDpjaGVja2VkICsgJl9fdGV4dDo6YWZ0ZXIge1xuICAgIEBpbmNsdWRlIHRuLWNoZWNrYm94d3JhcF9fcHNldWRvLWNoZWNrYm94LS1jaGVja2VkLWZnO1xuICB9XG59XG4iLCJAaW1wb3J0IFwiLi4vLi4vX3ZhcmlhYmxlcy9jb21tb25cIjtcbkBpbXBvcnQgXCIuLi8uLi9fdmFyaWFibGVzL3NpemVzXCI7XG5AaW1wb3J0IFwiLi4vLi4vX3ZhcmlhYmxlcy90eXBvZ3JhcGh5XCI7XG5cbkBtaXhpbiB0bi1jaGVja2JveHdyYXAoKSB7XG4gIEBpbmNsdWRlIHRuLWJvcmRlci1ib3gtZXZlcnl0aGluZztcblxuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgaGVpZ2h0OiAkdG4taGVpZ2h0LS10b2dnbGU7XG4gIGxpbmUtaGVpZ2h0OiAkdG4taGVpZ2h0LS10b2dnbGU7XG59XG5cbkBtaXhpbiB0bi1jaGVja2JveHdyYXBfX2NoZWNrYm94IHtcbiAgZGlzcGxheTogbm9uZTtcbn1cblxuQG1peGluIHRuLWNoZWNrYm94d3JhcF9fdGV4dCB7XG4gIHBhZGRpbmctcmlnaHQ6IDVweDtcbiAgcGFkZGluZy1sZWZ0OiAkdG4taGVpZ2h0LS10b2dnbGUgKyA1cHg7XG4gIGZvbnQtc2l6ZTogJHRuLWZvbnQtc2l6ZS0tZGVmYXVsdDtcbn1cblxuQG1peGluIHRuLWNoZWNrYm94d3JhcF9fcHNldWRvLWNoZWNrYm94KCkge1xuICBAaW5jbHVkZSB0bi1wb3NpdGlvbi1hYnNvbHV0ZS10b3AtbGVmdDtcbiAgQGluY2x1ZGUgdG4tYm9yZGVyLWJveC1ldmVyeXRoaW5nO1xuXG4gIHdpZHRoOiAkdG4taGVpZ2h0LS10b2dnbGU7XG4gIGhlaWdodDogJHRuLWhlaWdodC0tdG9nZ2xlO1xuICB0cmFuc2l0aW9uOiBib3gtc2hhZG93ICR0bi1hbmltYXRpb24tc3BlZWQtLXF1aWNrIGVhc2U7XG4gIGJvcmRlcjogMnB4IHNvbGlkICM3NTc1NzU7XG4gIGJvcmRlci1yYWRpdXM6ICR0bi1ib3JkZXItLXN0YW5kYXJkLWVsZW1lbnQtYm9yZGVyLXJhZGl1cztcbiAgYmFja2dyb3VuZDogJHRuLWNvbG9yLS13aGl0ZTtcbiAgYm94LXNoYWRvdzogaW5zZXQgMCAwIDAgOHB4ICR0bi1jb2xvci0td2hpdGU7XG4gIGNvbnRlbnQ6IFwiXCI7XG59XG5cbkBtaXhpbiB0bi1jaGVja2JveHdyYXBfX3BzZXVkby1jaGVja2JveC0tY2hlY2tlZC1iZyB7XG4gIGJvcmRlci1jb2xvcjogJHRuLWNvbG9yLS1icmFuZDtcbiAgYmFja2dyb3VuZC1jb2xvcjogJHRuLWNvbG9yLS1icmFuZDtcbiAgYm94LXNoYWRvdzogaW5zZXQgMCAwIDAgMCAkdG4tY29sb3ItLXdoaXRlO1xufVxuXG5AbWl4aW4gdG4tY2hlY2tib3h3cmFwX19wc2V1ZG8tY2hlY2tib3gtLWNoZWNrZWQtZmcge1xuICBAaW5jbHVkZSB0bi1wb3NpdGlvbi1hYnNvbHV0ZS10b3AtbGVmdDtcblxuICB3aWR0aDogJHRuLWhlaWdodC0tdG9nZ2xlO1xuICBoZWlnaHQ6ICR0bi1oZWlnaHQtLXRvZ2dsZTtcbiAgYmFja2dyb3VuZDogdXJsKGRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ2dBQUFBb0JBTUFBQUIrMEtWZUFBQUFEMUJNVkVVQUFBRC8vLy8vLy8vLy8vLy8vLytQUXQ1b0FBQUFCSFJTVGxNQW9HRGNnSFBPb2dBQUFGOUpSRUZVS005akdQWkFFWXNZazRzQXBxQ0tpeU1XaFVCQlRJVlE3WlFyRk1LaWtORkZBVk9oaUlzVFFpRkMwRVVCcmhDaEhhUVVvUkNoRktJUVRTbEVJWnBTc0VKMHBWZzhJNExOMTh3dUxnYVlvV3ZpakNVZW1BMFloZ2tBQUc5UEV6SlpPTFVuQUFBQUFFbEZUa1N1UW1DQyk7XG4gIGJhY2tncm91bmQtc2l6ZTogJHRuLWhlaWdodC0tdG9nZ2xlO1xuICBjb250ZW50OiBcIlwiO1xufVxuIiwiQGltcG9ydCBcInRuLXJhZGlvLWJ1dHRvbi1taXhpbnNcIjtcblxuLyoqXG4gKiBAbW9sZWN1bGUgU3RhbmRhcmQgcmFkaW8tYnV0dG9uXG4gKiBAc2VjdGlvbiBGb3JtIGVsZW1lbnRzID4gVG9nZ2xlc1xuICogQGRlc2NyaXB0aW9uXG4gKiAgU3RhbmRhcmQgc3R5bGluZyBmb3IgcmFkaW8tYnV0dG9uc1xuICogQG1hcmt1cFxuICogIDxsYWJlbCBjbGFzcz1cInRuLXJhZGlvd3JhcFwiPlxuICogICAgPGlucHV0IGNsYXNzPVwidG4tcmFkaW93cmFwX19yYWRpb1wiIHR5cGU9XCJyYWRpb1wiIG5hbWU9XCJ4XCI+XG4gKiAgICA8c3BhbiBjbGFzcz1cInRuLXJhZGlvd3JhcF9fdGV4dFwiPlRleHQ8L3NwYW4+XG4gKiAgPC9sYWJlbD5cbiAqICA8bGFiZWwgY2xhc3M9XCJ0bi1yYWRpb3dyYXBcIj5cbiAqICAgIDxpbnB1dCBjbGFzcz1cInRuLXJhZGlvd3JhcF9fcmFkaW9cIiB0eXBlPVwicmFkaW9cIiBuYW1lPVwieFwiIGNoZWNrZWQ+XG4gKiAgICA8c3BhbiBjbGFzcz1cInRuLXJhZGlvd3JhcF9fdGV4dFwiPlRleHQ8L3NwYW4+XG4gKiAgPC9sYWJlbD5cbiAqL1xuLnRuLXJhZGlvd3JhcCB7XG4gIEBpbmNsdWRlIHRuLWludGVyYWN0aW9uLS11bnNlbGV0YWJsZTtcbiAgQGluY2x1ZGUgdG4tcmFkaW93cmFwO1xuXG4gICZfX3JhZGlvIHtcbiAgICBAaW5jbHVkZSB0bi1yYWRpb3dyYXBfX3JhZGlvO1xuICB9XG5cbiAgJl9fdGV4dCB7XG4gICAgQGluY2x1ZGUgdG4tcmFkaW93cmFwX190ZXh0O1xuICB9XG5cbiAgJl9fcmFkaW8gKyAmX190ZXh0OjpiZWZvcmUge1xuICAgIEBpbmNsdWRlIHRuLXJhZGlvd3JhcF9fcHNldWRvLXJhZGlvO1xuICB9XG5cbiAgJl9fcmFkaW86Y2hlY2tlZCArICZfX3RleHQ6OmJlZm9yZSB7XG4gICAgQGluY2x1ZGUgdG4tcmFkaW93cmFwX19wc2V1ZG8tcmFkaW8tLWNoZWNrZWQ7XG4gIH1cbn1cbiIsIkBpbXBvcnQgXCIuLi8uLi9fdmFyaWFibGVzL2NvbW1vblwiO1xuQGltcG9ydCBcIi4uLy4uL192YXJpYWJsZXMvc2l6ZXNcIjtcbkBpbXBvcnQgXCIuLi8uLi9fdmFyaWFibGVzL3R5cG9ncmFwaHlcIjtcblxuQG1peGluIHRuLXJhZGlvd3JhcCgpIHtcbiAgQGluY2x1ZGUgdG4tYm9yZGVyLWJveC1ldmVyeXRoaW5nO1xuXG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBoZWlnaHQ6ICR0bi1oZWlnaHQtLXRvZ2dsZTtcbiAgbGluZS1oZWlnaHQ6ICR0bi1oZWlnaHQtLXRvZ2dsZTtcbn1cblxuQG1peGluIHRuLXJhZGlvd3JhcF9fcmFkaW8ge1xuICBkaXNwbGF5OiBub25lO1xufVxuXG5AbWl4aW4gdG4tcmFkaW93cmFwX190ZXh0IHtcbiAgcGFkZGluZy1yaWdodDogNXB4O1xuICBwYWRkaW5nLWxlZnQ6ICR0bi1oZWlnaHQtLXRvZ2dsZSArIDVweDtcbiAgZm9udC1zaXplOiAkdG4tZm9udC1zaXplLS1kZWZhdWx0O1xufVxuXG5AbWl4aW4gdG4tcmFkaW93cmFwX19wc2V1ZG8tcmFkaW8oKSB7XG4gIEBpbmNsdWRlIHRuLXBvc2l0aW9uLWFic29sdXRlLXRvcC1sZWZ0O1xuICBAaW5jbHVkZSB0bi1ib3JkZXItYm94LWV2ZXJ5dGhpbmc7XG5cbiAgd2lkdGg6ICR0bi1oZWlnaHQtLXRvZ2dsZTtcbiAgaGVpZ2h0OiAkdG4taGVpZ2h0LS10b2dnbGU7XG4gIHRyYW5zaXRpb246IGJveC1zaGFkb3cgJHRuLWFuaW1hdGlvbi1zcGVlZC0tcXVpY2sgZWFzZTtcbiAgYm9yZGVyOiAycHggc29saWQgIzc1NzU3NTtcbiAgYm9yZGVyLXJhZGl1czogJHRuLWhlaWdodC0tdG9nZ2xlIC8gMjtcbiAgYmFja2dyb3VuZDogJHRuLWNvbG9yLS13aGl0ZTtcbiAgYm94LXNoYWRvdzogaW5zZXQgMCAwIDAgOHB4ICR0bi1jb2xvci0td2hpdGU7XG4gIGNvbnRlbnQ6IFwiXCI7XG59XG5cbkBtaXhpbiB0bi1yYWRpb3dyYXBfX3BzZXVkby1yYWRpby0tY2hlY2tlZCB7XG4gIGJvcmRlci1jb2xvcjogJHRuLWNvbG9yLS1icmFuZDtcbiAgYmFja2dyb3VuZC1jb2xvcjogJHRuLWNvbG9yLS1icmFuZDtcbiAgYm94LXNoYWRvdzogaW5zZXQgMCAwIDAgM3B4ICR0bi1jb2xvci0td2hpdGU7XG59XG4iLCJAaW1wb3J0IFwidG4tdG9nZ2xlLW1peGluc1wiO1xuXG4vKipcbiAqIEBtb2xlY3VsZSBUb2dnbGUgY2hlY2tib3hcbiAqIEBzZWN0aW9uIEZvcm0gZWxlbWVudHMgPiBUb2dnbGVzXG4gKiBAZGVzY3JpcHRpb25cbiAqICBUb2dnbGUgc3R5bGluZyBmb3IgY2hlY2tib3hcbiAqIEBtYXJrdXBcbiAqICA8bGFiZWwgY2xhc3M9XCJ0bi10b2dnbGVcIj5cbiAqICAgIDxpbnB1dCBjbGFzcz1cInRuLXRvZ2dsZV9fY2hlY2tib3hcIiB0eXBlPVwiY2hlY2tib3hcIj5cbiAqICAgIDxzcGFuIGNsYXNzPVwidG4tdG9nZ2xlX190ZXh0XCI+VGV4dDwvc3Bhbj5cbiAqICA8L2xhYmVsPlxuICogIDxsYWJlbCBjbGFzcz1cInRuLXRvZ2dsZVwiPlxuICogICAgPGlucHV0IGNsYXNzPVwidG4tdG9nZ2xlX19jaGVja2JveFwiIHR5cGU9XCJjaGVja2JveFwiIGNoZWNrZWQ+XG4gKiAgICA8c3BhbiBjbGFzcz1cInRuLXRvZ2dsZV9fdGV4dFwiPlRleHQ8L3NwYW4+XG4gKiAgPC9sYWJlbD5cbiAqL1xuLnRuLXRvZ2dsZSB7XG4gIEBpbmNsdWRlIHRuLWludGVyYWN0aW9uLS11bnNlbGV0YWJsZTtcbiAgQGluY2x1ZGUgdG4tdG9nZ2xlO1xuXG4gICZfX2NoZWNrYm94IHtcbiAgICBAaW5jbHVkZSB0bi10b2dnbGVfX2NoZWNrYm94O1xuICB9XG5cbiAgJl9fdGV4dCB7XG4gICAgQGluY2x1ZGUgdG4tdG9nZ2xlX190ZXh0O1xuICB9XG5cbiAgJl9fY2hlY2tib3ggKyAmX190ZXh0OjpiZWZvcmUge1xuICAgIEBpbmNsdWRlIHRuLXRvZ2dsZV9fbGluZTtcbiAgfVxuXG4gICZfX2NoZWNrYm94ICsgJl9fdGV4dDo6YWZ0ZXIge1xuICAgIEBpbmNsdWRlIHRuLXRvZ2dsZV9fZG90O1xuICB9XG5cbiAgJl9fY2hlY2tib3g6Y2hlY2tlZCArICZfX3RleHQ6OmJlZm9yZSB7XG4gICAgQGluY2x1ZGUgdG4tdG9nZ2xlX19saW5lLS1jaGVja2VkO1xuICB9XG5cbiAgJl9fY2hlY2tib3g6Y2hlY2tlZCArICZfX3RleHQ6OmFmdGVyIHtcbiAgICBAaW5jbHVkZSB0bi10b2dnbGVfX2RvdC0tY2hlY2tlZDtcbiAgfVxufVxuIiwiQGltcG9ydCBcIi4uLy4uL192YXJpYWJsZXMvY29tbW9uXCI7XG5AaW1wb3J0IFwiLi4vLi4vX3ZhcmlhYmxlcy9zaXplc1wiO1xuQGltcG9ydCBcIi4uLy4uL192YXJpYWJsZXMvdHlwb2dyYXBoeVwiO1xuXG4kdG4tdG9nZ2xlLXNsaWRlLWhlaWdodDogMTRweDtcbiR0bi10b2dnbGUtc2xpZGUtd2lkdGg6IDM2cHg7XG5cbkBtaXhpbiB0bi10b2dnbGUoKSB7XG4gIEBpbmNsdWRlIHRuLWJvcmRlci1ib3gtZXZlcnl0aGluZztcblxuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgaGVpZ2h0OiAkdG4taGVpZ2h0LS10b2dnbGU7XG4gIGxpbmUtaGVpZ2h0OiAkdG4taGVpZ2h0LS10b2dnbGU7XG59XG5cbkBtaXhpbiB0bi10b2dnbGVfX2NoZWNrYm94IHtcbiAgZGlzcGxheTogbm9uZTtcbn1cblxuQG1peGluIHRuLXRvZ2dsZV9fdGV4dCB7XG4gIHBhZGRpbmctcmlnaHQ6IDVweDtcbiAgcGFkZGluZy1sZWZ0OiAkdG4tdG9nZ2xlLXNsaWRlLXdpZHRoICsgNXB4O1xuICBmb250LXNpemU6ICR0bi1mb250LXNpemUtLWRlZmF1bHQ7XG59XG5cbkBtaXhpbiB0bi10b2dnbGVfX2xpbmUoKSB7XG4gIEBpbmNsdWRlIHRuLXBvc2l0aW9uLWFic29sdXRlLXRvcC1sZWZ0O1xuICBAaW5jbHVkZSB0bi1ib3JkZXItYm94LWV2ZXJ5dGhpbmc7XG5cbiAgd2lkdGg6ICR0bi10b2dnbGUtc2xpZGUtd2lkdGg7XG4gIGhlaWdodDogJHRuLXRvZ2dsZS1zbGlkZS1oZWlnaHQ7XG4gIG1hcmdpbjogKCR0bi1oZWlnaHQtLXRvZ2dsZSAtICR0bi10b2dnbGUtc2xpZGUtaGVpZ2h0KS8yIDA7XG4gIGJvcmRlci1yYWRpdXM6ICR0bi10b2dnbGUtc2xpZGUtaGVpZ2h0LzI7XG4gIGJhY2tncm91bmQ6ICNiYmI7XG4gIGNvbnRlbnQ6IFwiXCI7XG59XG5cbkBtaXhpbiB0bi10b2dnbGVfX2RvdCgpIHtcbiAgQGluY2x1ZGUgdG4tcG9zaXRpb24tYWJzb2x1dGUtdG9wLWxlZnQ7XG4gIEBpbmNsdWRlIHRuLWJvcmRlci1ib3gtZXZlcnl0aGluZztcblxuICB3aWR0aDogJHRuLWhlaWdodC0tdG9nZ2xlO1xuICBoZWlnaHQ6ICR0bi1oZWlnaHQtLXRvZ2dsZTtcbiAgdHJhbnNpdGlvbjogbGVmdCAkdG4tYW5pbWF0aW9uLXNwZWVkLS1xdWljayBlYXNlO1xuICBib3JkZXItcmFkaXVzOiAkdG4taGVpZ2h0LS10b2dnbGUvMjtcbiAgYmFja2dyb3VuZDogJHRuLWNvbG9yLS13aGl0ZTtcbiAgYm94LXNoYWRvdzogMCAxcHggNXB4IHJnYmEoMCwgMCwgMCwgLjUpO1xuICBjb250ZW50OiBcIlwiO1xufVxuXG5AbWl4aW4gdG4tdG9nZ2xlX19saW5lLS1jaGVja2VkKCkge1xuICBiYWNrZ3JvdW5kOiAkdG4tY29sb3ItLWJyYW5kLW11dGVkO1xufVxuXG5AbWl4aW4gdG4tdG9nZ2xlX19kb3QtLWNoZWNrZWQoKSB7XG4gIGxlZnQ6ICR0bi10b2dnbGUtc2xpZGUtd2lkdGggLSAkdG4taGVpZ2h0LS10b2dnbGU7XG4gIGJhY2tncm91bmQ6ICR0bi1jb2xvci0tYnJhbmQ7XG59XG4iLCJAaW1wb3J0IFwidG4tYS1taXhpbnNcIjtcblxuLyoqXG4gKiBAYXRvbSBCYXNpYyBsaW5rXG4gKiBAc2VjdGlvbiBUeXBvZ3JhcGh5XG4gKiBAZGVzY3JpcHRpb25cbiAqICBTdGFuZGFyZCBsaW5rIHN0eWxpbmdcbiAqIEBtYXJrdXBcbiAqICA8YSBocmVmPVwiI1wiIGNsYXNzPVwidG4tYVwiPlRoaXMgaXMgYSBsaW5rPC9hPlxuICovXG4udG4tYSxcbi50bi1hOmxpbmssXG4udG4tYTp2aXNpdGVkIHtcbiAgQGluY2x1ZGUgdG4tYTtcbn1cbiIsIkBpbXBvcnQgXCIuLi9fdmFyaWFibGVzL2NvbW1vblwiO1xuXG5AbWl4aW4gdG4tYSgpIHtcbiAgY29sb3I6ICR0bi1jb2xvci0tYnJhbmQ7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcblxuICAmOmFjdGl2ZSxcbiAgJjpmb2N1cyxcbiAgJjpob3ZlciB7XG4gICAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XG4gIH1cbn1cbiIsIkBpbXBvcnQgXCJ0bi1wLW1peGluc1wiO1xuXG4vKipcbiAqIEdlbmVyaWMgcGFyYWdyYXBoXG4gKlxuICogQGF0b20gQmFzaWMgcGFyYWdyYXBoXG4gKiBAc2VjdGlvbiBUeXBvZ3JhcGh5XG4gKiBAbWFya3VwXG4gKiAgPHAgY2xhc3M9XCJ0bi1wXCI+TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4gU2VkIG5pc2wgbG9yZW0sIGRhcGlidXMgc2VkIGNvbnZhbGxpcyBxdWlzLCBzb2xsaWNpdHVkaW4gYWNjdW1zYW4gZHVpLiBWZXN0aWJ1bHVtIGFudGUgaXBzdW0gcHJpbWlzIGluIGZhdWNpYnVzIG9yY2kgbHVjdHVzIGV0IHVsdHJpY2VzIHBvc3VlcmUgY3ViaWxpYSBDdXJhZTsgVmVzdGlidWx1bSBmYXVjaWJ1cyBhcmN1IGVnZXQgbmlzaSBwb3N1ZXJlIGNvbnNlY3RldHVyLjwvcD5cbiAqL1xuLnRuLXAge1xuICBAaW5jbHVkZSB0bi1wO1xufVxuIiwiQGltcG9ydCBcIi4uL192YXJpYWJsZXMvdHlwb2dyYXBoeVwiO1xuQGltcG9ydCBcIi4uL192YXJpYWJsZXMvc2l6ZXNcIjtcblxuQG1peGluIHRuLXAoKSB7XG4gIG1hcmdpbjogJHRuLXNwYWNpbmctLXN0YW5kYXJkLWVsZW1lbnQtbm9uYm9yZGVyZWQgMDtcbiAgY29sb3I6ICR0bi1jb2xvci0tZGVmYXVsdDtcbiAgZm9udDogJHRuLWZvbnQtLWRlZmF1bHQ7XG4gIGxpbmUtaGVpZ2h0OiAkdG4tbGluZS1oZWlnaHQtLWRlZmF1bHQ7XG59XG4iLCJAaW1wb3J0IFwidG4tcHJlLW1peGluc1wiO1xuXG4vKipcbiAqIExpZ2h0IGdyYXkgYmxvY2sgd2l0aCBtb25vc3BhY2VkIGZvbnQgdXNlZCB0byBkaXNwbGF5IGNvZGVcbiAqXG4gKiBAYXRvbSBCYXNpYyBjb2RlIGJsb2NrXG4gKiBAc2VjdGlvbiBUeXBvZ3JhcGh5ID4gQ29kZVxuICogQG1hcmt1cFxuICogIDxwcmUgY2xhc3M9XCJ0bi1wcmVcIj48Y29kZT5FeGFtcGxlIGNvZGU8L2NvZGU+PC9wcmU+XG4gKi9cbi50bi1wcmUge1xuICBAaW5jbHVkZSB0bi1ib3JkZXItYm94LWV2ZXJ5dGhpbmc7XG4gIEBpbmNsdWRlIHRuLXByZTtcbn1cbiIsIkBpbXBvcnQgXCIuLi9fdmFyaWFibGVzL3NpemVzXCI7XG5AaW1wb3J0IFwiLi4vX3ZhcmlhYmxlcy90eXBvZ3JhcGh5XCI7XG5cbkBtaXhpbiB0bi1wcmUoKSB7XG4gIHBhZGRpbmc6ICR0bi1zcGFjaW5nLS1zbWFsbC1lbGVtZW50LW5vbmJvcmRlcmVkO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAkdG4tY29sb3ItLWxpZ2h0LWdyYXktYmFja2dyb3VuZDtcbiAgZm9udC1mYW1pbHk6IG1vbm9zcGFjZTtcbn1cbiIsIkBpbXBvcnQgXCJ0bi1jb2RlLW1peGluc1wiO1xuXG4vKipcbiAqIExpZ2h0IGdyYXkgZW5jYXBzdWxhdGlvbiB3aXRoIG1vbm9zcGFjZWQgZm9udCB1c2VkIHRvIGRpc3BsYXkgY29kZVxuICpcbiAqIEBhdG9tIEJhc2ljIGlubGluZSBjb2RlXG4gKiBAc2VjdGlvbiBUeXBvZ3JhcGh5ID4gQ29kZVxuICogQG1hcmt1cFxuICogIDxjb2RlIGNsYXNzPVwidG4tY29kZVwiPkV4YW1wbGUgY29kZTwvY29kZT5cbiAqL1xuLnRuLWNvZGUge1xuICBAaW5jbHVkZSB0bi1jb2RlO1xufVxuIiwiQGltcG9ydCBcIi4uL192YXJpYWJsZXMvdHlwb2dyYXBoeVwiO1xuXG4vKlxuICogQG1peGluIERlZmF1bHQgY29kZSBibG9jayBzdHlsaW5nXG4gKiBAc2VjdGlvbiBUeXBvZ3JhcGh5XG4gKi9cbkBtaXhpbiB0bi1jb2RlKCkge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAkdG4tY29sb3ItLWxpZ2h0LWdyYXktYmFja2dyb3VuZDtcbiAgZm9udC1mYW1pbHk6IG1vbm9zcGFjZTtcbn1cbiIsIkBpbXBvcnQgXCJ0bi1oaW50LW1peGluc1wiO1xuXG4vKipcbiAqIExpZ2h0IGdyYXkgYmxvY2sgd2l0aCBhbiBhY2NlbnQgZm9yIGEgaGlnaGxpZ2h0ZWQgcGFyYWdyYXBoLiBCZXN0IHVzZWQgaW4gdGFuZGVtIHdpdGggYSBnZW5lcmljIHBhcmFncmFwaCBjbGFzcy5cbiAqXG4gKiBAYXRvbSBIaW50XG4gKiBAc2VjdGlvbiBUeXBvZ3JhcGh5XG4gKiBAbW9kaWZpZXJzXG4gKiAgLnRuLWhpbnQtLWJyYW5kIG1vZGlmaWVyIGZvciBicmFuZCBjb2xvciBhY2NlbnRcbiAqIEBtYXJrdXBcbiAqICA8aDM+SGludCB2YXJpYXRpb25zOjwvaDM+XG4gKiAgPGRpdiBjbGFzcz1cInRuLXAgdG4taGludFwiPkxvcmVtIGlwc3VtIGRvbG9yIHNpdCBhbWV0LCBjb25zZWN0ZXR1ciBhZGlwaXNjaW5nIGVsaXQuIFNlZCBuaXNsIGxvcmVtLCBkYXBpYnVzIHNlZCBjb252YWxsaXMgcXVpcywgc29sbGljaXR1ZGluIGFjY3Vtc2FuIGR1aS4gVmVzdGlidWx1bSBhbnRlIGlwc3VtIHByaW1pcyBpbiBmYXVjaWJ1cyBvcmNpIGx1Y3R1cyBldCB1bHRyaWNlcyBwb3N1ZXJlIGN1YmlsaWEgQ3VyYWU7IFZlc3RpYnVsdW0gZmF1Y2lidXMgYXJjdSBlZ2V0IG5pc2kgcG9zdWVyZSBjb25zZWN0ZXR1ci48L2Rpdj5cbiAqICA8aDM+SGludCB2YXJpYXRpb25zICgtLWJyYW5kKTo8L2gzPlxuICogIDxkaXYgY2xhc3M9XCJ0bi1wIHRuLWhpbnQgdG4taGludC0tYnJhbmRcIj5Mb3JlbSBpcHN1bSBkb2xvciBzaXQgYW1ldCwgY29uc2VjdGV0dXIgYWRpcGlzY2luZyBlbGl0LiBTZWQgbmlzbCBsb3JlbSwgZGFwaWJ1cyBzZWQgY29udmFsbGlzIHF1aXMsIHNvbGxpY2l0dWRpbiBhY2N1bXNhbiBkdWkuIFZlc3RpYnVsdW0gYW50ZSBpcHN1bSBwcmltaXMgaW4gZmF1Y2lidXMgb3JjaSBsdWN0dXMgZXQgdWx0cmljZXMgcG9zdWVyZSBjdWJpbGlhIEN1cmFlOyBWZXN0aWJ1bHVtIGZhdWNpYnVzIGFyY3UgZWdldCBuaXNpIHBvc3VlcmUgY29uc2VjdGV0dXIuPC9kaXY+XG4gKi9cbi50bi1oaW50IHtcbiAgQGluY2x1ZGUgdG4tYm9yZGVyLWJveC1ldmVyeXRoaW5nO1xuICBAaW5jbHVkZSB0bi1oaW50O1xuXG4gICYtLWJyYW5kIHtcbiAgICBAaW5jbHVkZSB0bi1oaW50LS1icmFuZDtcbiAgfVxufVxuIiwiQGltcG9ydCBcIi4uL192YXJpYWJsZXMvdHlwb2dyYXBoeVwiO1xuQGltcG9ydCBcIi4uL192YXJpYWJsZXMvY29tbW9uXCI7XG5AaW1wb3J0IFwiLi4vX3ZhcmlhYmxlcy9zaXplc1wiO1xuXG5AbWl4aW4gdG4taGludCgpIHtcbiAgcGFkZGluZzogJHRuLXNwYWNpbmctLXN0YW5kYXJkLWVsZW1lbnQtbm9uYm9yZGVyZWQ7XG4gIGJvcmRlci1sZWZ0OiAycHggc29saWQgJHRuLWNvbG9yLS1ncmF5O1xuICBiYWNrZ3JvdW5kOiAkdG4tY29sb3ItLWxpZ2h0LWdyYXktYmFja2dyb3VuZDtcbn1cblxuQG1peGluIHRuLWhpbnQtLWJyYW5kKCkge1xuICBib3JkZXItY29sb3I6ICR0bi1jb2xvci0tYnJhbmQ7XG59XG4iLCJAaW1wb3J0IFwidG4taGVhZGluZ3MtbWl4aW5zXCI7XG5AaW1wb3J0IFwiLi4vX3ZhcmlhYmxlcy90eXBvZ3JhcGh5XCI7XG5cbi8qKlxuICogSGVhZGluZyBzdHlsZXMgc2hvdWxkIGJlIGFwcGxpZWQgdG8gaDEsIGgyLC4uLiB0YWdzLlxuICpcbiAqIEBhdG9tIEhlYWRpbmdzXG4gKiBAc2VjdGlvbiBUeXBvZ3JhcGh5XG4gKiBAbWFya3VwXG4gKiAgPGgxIGNsYXNzPVwidG4taDFcIj5IZWFkaW5nIC50bi1oMTwvaDE+XG4gKiAgPHAgY2xhc3M9XCJ0bi1wXCI+TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4gU2VkIG5pc2wgbG9yZW0sIGRhcGlidXMgc2VkIGNvbnZhbGxpcyBxdWlzLCBzb2xsaWNpdHVkaW4gYWNjdW1zYW4gZHVpLiBWZXN0aWJ1bHVtIGFudGUgaXBzdW0gcHJpbWlzIGluIGZhdWNpYnVzIG9yY2kgbHVjdHVzIGV0IHVsdHJpY2VzIHBvc3VlcmUgY3ViaWxpYSBDdXJhZTsgVmVzdGlidWx1bSBmYXVjaWJ1cyBhcmN1IGVnZXQgbmlzaSBwb3N1ZXJlIGNvbnNlY3RldHVyLjwvcD5cbiAqICA8aDIgY2xhc3M9XCJ0bi1oMlwiPkhlYWRpbmcgLnRuLWgyPC9oMj5cbiAqICA8cCBjbGFzcz1cInRuLXBcIj5Mb3JlbSBpcHN1bSBkb2xvciBzaXQgYW1ldCwgY29uc2VjdGV0dXIgYWRpcGlzY2luZyBlbGl0LiBTZWQgbmlzbCBsb3JlbSwgZGFwaWJ1cyBzZWQgY29udmFsbGlzIHF1aXMsIHNvbGxpY2l0dWRpbiBhY2N1bXNhbiBkdWkuIFZlc3RpYnVsdW0gYW50ZSBpcHN1bSBwcmltaXMgaW4gZmF1Y2lidXMgb3JjaSBsdWN0dXMgZXQgdWx0cmljZXMgcG9zdWVyZSBjdWJpbGlhIEN1cmFlOyBWZXN0aWJ1bHVtIGZhdWNpYnVzIGFyY3UgZWdldCBuaXNpIHBvc3VlcmUgY29uc2VjdGV0dXIuPC9wPlxuICogIDxoMyBjbGFzcz1cInRuLWgzXCI+SGVhZGluZyAudG4taDM8L2gzPlxuICogIDxwIGNsYXNzPVwidG4tcFwiPkxvcmVtIGlwc3VtIGRvbG9yIHNpdCBhbWV0LCBjb25zZWN0ZXR1ciBhZGlwaXNjaW5nIGVsaXQuIFNlZCBuaXNsIGxvcmVtLCBkYXBpYnVzIHNlZCBjb252YWxsaXMgcXVpcywgc29sbGljaXR1ZGluIGFjY3Vtc2FuIGR1aS4gVmVzdGlidWx1bSBhbnRlIGlwc3VtIHByaW1pcyBpbiBmYXVjaWJ1cyBvcmNpIGx1Y3R1cyBldCB1bHRyaWNlcyBwb3N1ZXJlIGN1YmlsaWEgQ3VyYWU7IFZlc3RpYnVsdW0gZmF1Y2lidXMgYXJjdSBlZ2V0IG5pc2kgcG9zdWVyZSBjb25zZWN0ZXR1ci48L3A+XG4gKiAgPGg0IGNsYXNzPVwidG4taDRcIj5IZWFkaW5nIC50bi1oNDwvaDQ+XG4gKiAgPHAgY2xhc3M9XCJ0bi1wXCI+TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4gU2VkIG5pc2wgbG9yZW0sIGRhcGlidXMgc2VkIGNvbnZhbGxpcyBxdWlzLCBzb2xsaWNpdHVkaW4gYWNjdW1zYW4gZHVpLiBWZXN0aWJ1bHVtIGFudGUgaXBzdW0gcHJpbWlzIGluIGZhdWNpYnVzIG9yY2kgbHVjdHVzIGV0IHVsdHJpY2VzIHBvc3VlcmUgY3ViaWxpYSBDdXJhZTsgVmVzdGlidWx1bSBmYXVjaWJ1cyBhcmN1IGVnZXQgbmlzaSBwb3N1ZXJlIGNvbnNlY3RldHVyLjwvcD5cbiAqL1xuLnRuLWgxIHtcbiAgQGluY2x1ZGUgdG4taGVhZGluZygkdG4tZm9udC1zaXplLS1oMSk7XG59XG5cbi50bi1oMiB7XG4gIEBpbmNsdWRlIHRuLWhlYWRpbmcoJHRuLWZvbnQtc2l6ZS0taDIpO1xufVxuXG4udG4taDMge1xuICBAaW5jbHVkZSB0bi1oZWFkaW5nKCR0bi1mb250LXNpemUtLWgzKTtcbn1cblxuLnRuLWg0IHtcbiAgQGluY2x1ZGUgdG4taGVhZGluZygkdG4tZm9udC1zaXplLS1oNCk7XG59XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0dBRUc7QUlGSDs7O0dBR0c7QUFHSDs7O0dBR0c7QUFHSDs7O0dBR0c7QUFHSDs7O0dBR0c7QUFHSDs7O0dBR0c7QUFHSDs7O0dBR0c7QUFHSDs7O0dBR0c7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 */
